@@ -1,0 +1,75 @@
+body {
+  padding: 20px;
+  background-color:white;
+}
+
+.imagem {
+  width: 60px;
+}
+
+#voltar img {
+  width: 32px;
+  height: 32px;
+  margin-left: -56px;
+  margin-top: -28px;
+}
+
+.star {
+position: absolute;
+width: 96px;
+height: 45px;
+left: 256px;
+top: 146px;
+}
+
+.star2 {
+position: absolute;
+width: 96px;
+height: 45px;
+left: 256px;
+top: 236px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.text {
+  margin-left: 64px;
+  margin-top: -5px;
+}
+
+h2 {
+  margin-top: -55px;
+  font-size: 20px;
+  margin-left: 65px;
+  font-weight: bold;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+
+h1{
+  margin-right: 20px;
+  color: black;
+  text-align: center;
+  margin-top: -1%;
+  font-size: 45px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+.buttons {
+  margin-top: -60px;
+  margin-left: 140px;
+}
+
+.row{
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+

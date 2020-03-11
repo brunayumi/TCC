@@ -1,0 +1,56 @@
+body {
+  padding: 20px;
+  background-color:white;
+}
+
+.imagem {
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 40px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+.btn-dark {
+  margin-left: 95px;
+  background-color: grey;
+  color:black;
+  margin-top: 20px;
+}
+
+.row{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.ButtonPreto {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#28386b;
+	border-radius:14px;
+	border:2px solid #badaf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#badaf3;
+	font-family:Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 30px;
+  text-transform: uppercase;
+}
+.ButtonPreto:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonPreto:link{
+  text-decoration:none;
+}
+/*------------------------------------------------*/
+
+        
+

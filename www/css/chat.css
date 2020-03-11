@@ -1,0 +1,95 @@
+body {
+  background-color:white;
+}
+
+.imagem {
+  width: 60px;
+}
+
+#menu ul {
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    padding:10px;
+    margin:0px;
+    background-color: #badaf3;
+    list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 8px 17.9px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    background-color:white;
+    color: white;
+    border-top:3px solid #28386b;
+    border-radius:5px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.pessoa {
+  margin-left: 20px;
+}
+
+.text {
+  margin-left: 64px;
+  margin-top: -5px;
+}
+
+h2 {
+  margin-top: -55px;
+  font-size: 20px;
+  margin-left: 65px;
+  font-weight: bold;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+#voltar img {
+  width: 32px;
+  height: 32px;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+h1{
+  margin-right: 50px;
+  color: black;
+  text-align: center;
+  margin-top: -1%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+.buttons {
+  margin-top: -60px;
+  margin-left: 140px;
+}
+
+.row{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-dark {
+  margin-left: 95px;
+  background-color: grey;
+  color:black;
+  margin-top: 20px;
+}
+
+
+
+
+
+

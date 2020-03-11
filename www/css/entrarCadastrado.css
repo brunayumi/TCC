@@ -1,0 +1,80 @@
+body {
+  padding: 25px;
+  background-color:white;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  margin-top: -3%;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 110px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.025em;
+}
+
+
+#voltar img {
+  width: 36px;
+  height: 36px;
+  margin-left: -10px;
+  margin-top: -1px;
+}
+
+.btn-block {
+  width: 44px;
+  height:50px;
+  margin-left: -30px;
+  margin-top: -12px;
+  background-color: white;
+}
+
+.ButtonPreto {
+  margin-top:100px;
+  margin-left: 120px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#28386b;
+	border-radius:14px;
+	border:2px solid #badaf3;
+	display:inline-block;
+	color:#badaf3;
+	font-family:'Times New Roman', Times, serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 30px;
+  text-transform: uppercase;
+}
+.ButtonPreto:active {
+  box-shadow: none;
+}
+a.ButtonPreto:link{
+  text-decoration:none;
+}
+
+#email {
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.03); 
+  width: 316px;
+  height: 42px;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+#senha {
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.03); 
+  width: 316px;
+  height: 42px;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+span {
+  font-family:'Times New Roman', Times, serif;
+  margin-left: 218px;
+}

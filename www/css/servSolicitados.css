@@ -1,0 +1,130 @@
+body {
+  padding: 25px;
+  background-color: white;
+}
+
+h1{
+  text-align: center;
+  color: black;
+  margin-top: -37%;
+  margin-left: 20px;
+  height: 25px;
+  font-size: 38px;
+  font-family:Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+}
+
+h2{
+  text-align: center;
+  color: black;
+  margin-top: -14%;
+  margin-left: 80px;
+  height: 25px;
+  font-size: 25px;
+  font-family:Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+}
+
+.text {
+  margin-top: -10px;
+  margin-left: 80px;
+}
+
+/*BOTÕES--------------------------------------------*/
+.ButtonBranco {
+  margin-left: 200px;
+  margin-top: -680px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:inline-block;
+	color: #28386b;
+	font-family: Comfortaa;
+	font-size:10px;
+	font-weight:bold;
+	padding:9px 20px;
+  text-transform: uppercase;
+}
+.ButtonBranco:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonBranco:link{
+  text-decoration:none;
+}
+
+#voltar img {
+  width: 25px;
+  height: 25px;
+  margin-left: -90px;
+  margin-top: -130px;
+}
+
+.imagem{
+  width: 60px;
+  margin-left: 8px;
+  margin-top: -2%;
+}
+
+#pesquisar img {
+  width: 62px;
+  height: 62px;
+  margin-left: -36px;
+  margin-top: -7px;
+}
+
+#chat img {
+  width: 55px;
+  height: 55px;
+  margin-left: -20px;
+  margin-top: -2px;
+}
+
+#inicio img {
+  width: 60px;
+  height: 60px;
+  margin-left: -16px;
+  margin-top: -8px;
+}
+
+#notificacao img {
+  width: 27px;
+  height: 27px;
+  margin-left: 18px;
+  margin-top: 10px;
+}
+
+#perfil img {
+  width: 56px;
+  height: 56px;
+  margin-top: -2px;
+  margin-left: 5px;
+}
+
+.row{
+text-align : center;
+margin-top: 85%;
+}
+
+.menu {
+  margin-top: 40px;
+}
+
+.btn-block {
+  background-color:white;
+  width: 62px;
+  height: 62px;
+  margin-left: 15px;
+  margin-top: 50px;
+}

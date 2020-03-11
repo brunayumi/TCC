@@ -1,0 +1,80 @@
+body {
+  padding: 20px;
+  background-color:white;
+}
+
+.imagem {
+  width: 60px;
+}
+
+#voltar img {
+  width: 25px;
+  height: 25px;
+  margin-left: -26px;
+  margin-top: -18px;
+}
+
+.imagem2 {
+  width: 60px;
+  position: absolute;
+  left: 78.27%;
+  right: 4.27%;
+  top: 28.08%;
+  bottom: 68.47%;
+}
+
+.text2 {
+  text-align: right;
+  position: absolute;
+  left: 22px;
+  top: 184px;
+  width: 262px;
+  height: 66px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 0px 6px 6px 6px;  
+}
+
+h2 {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 35px;
+  margin-right: 50px;
+  font-weight: bold;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+.buttons {
+  margin-top: -60px;
+  margin-left: 140px;
+}
+
+.row{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text {
+  position: absolute;
+  width: 262px;
+  height: 66px;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 0px 6px 6px 6px;  
+  margin-left: 70px;
+  margin-top: -60px;
+}
+
+
+
+
+
+

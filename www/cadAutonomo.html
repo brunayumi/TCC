@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+   <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/codigo.js"></script>
+
+  <link rel="stylesheet" href="components/Bootstrap/loader.css">
+  <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/cadAutonomo.css">
+</head>
+<body>
+  <div class="col-xs-2">
+    <div class="form-group">
+        <a class="btn btn-block" href="registrar.html"  id="voltar" role="button"><img src="btn_voltar.png"></a>
+       </div>
+    </div>
+  <h1>Autônomo</h1>
+  <hr>
+  <form action="cadAutonomo" method="post">
+    <div>
+      <div>
+        <label for="nomeAut">Nome</label>
+      </div>
+        <input type="text" id="nomeAut" />
+    </div>
+    <br>
+     <div>
+       <div>
+        <label for="sobrenomeAut">Sobrenome</label>
+        </div>
+        <input type="text" id="sobrenomeAut" />
+    </div>
+    <br>
+    <div>
+      <div>
+        <label for="cpfAut">CPF</label>
+      </div>
+        <input type="text" id="cpfAut" />
+    </div>
+    <br>
+     <div>
+       <div>
+        <label for="emailAut">E-mail</label>
+      </div>
+        <input type="text" id="emailAut" />
+    </div>
+    <br>
+    <div>
+      <div>
+        <label for="telefoneAut">Telefone</label>
+       </div>
+        <input type="number" id="telefoneAut" />
+    </div>
+    <br>
+</form>
+ <div class="row">
+   <a href="index.html" class="ButtonBranco">Cancelar</a>
+   <a href="cadAutonomo2.html" class="ButtonPreto">Próximo</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+  padding: 20px;
+  background-color:white;
+}
+
+.imagem {
+  margin-left: -30px;
+  margin-top: px;
+  width: 60px;
+}
+
+#voltar img {
+  width: 32px;
+  height: 32px;
+  margin-left: -56px;
+  margin-top: -28px;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 35px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.row{
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*BOTÕES--------------------------------------------*/
+.ButtonBranco {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:block;
+	color: #28386b;
+	font-family: Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:14px 40px;
+  text-transform: uppercase;
+}
+.ButtonBranco:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonBranco:link{
+  text-decoration:none;
+}
+
+.ButtonPreto {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#28386b;
+	border-radius:14px;
+	border:2px solid #badaf3;
+	display:block;
+	cursor:pointer;
+	color:#badaf3;
+	font-family:Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 30px;
+  text-transform: uppercase;
+}
+.ButtonPreto:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonPreto:link{
+  text-decoration:none;
+}
+/*------------------------------------------------*/
+
+        
+
+
+

@@ -1,0 +1,86 @@
+body {
+  padding: 25px;
+  background-color: white;
+}
+
+#voltar img {
+  width: 32px;
+  height: 32px;
+  margin-left: -56px;
+  margin-top: -28px;
+}
+
+.buttons {
+  margin-top: 200px;
+}
+
+h1{
+position: absolute;
+width: 9px;
+height: 40px;
+left: 130px;
+top: -17px;
+font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+color: #000000;
+}
+
+.row{
+  text-align: center;
+  padding: 10px;
+}
+
+/*BOTÕES--------------------------------------------*/
+.ButtonBranco {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display: block;
+	cursor:pointer;
+	color:#28386b;
+	font-family:Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 50px;
+  text-transform: uppercase;
+}
+.ButtonBranco:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonBranco:link{
+  text-decoration:none;
+}
+
+.ButtonPreto {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#28386b;
+	border-radius:14px;
+	border:2px solid #badaf3;
+	display:block;
+	cursor:pointer;
+	color:#badaf3;
+	font-family:Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:16px 40px;
+  text-transform: uppercase;
+}
+.ButtonPreto:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonPreto:link{
+  text-decoration:none;
+}
+/*------------------------------------------------*/
+
+        

@@ -1,0 +1,74 @@
+body {
+  padding: 25px;
+  background-color: white;
+}
+
+h1{
+  text-align: center;
+  color: black;
+  margin-top: 2%;
+  margin-left: 80px;
+  font-size: 35px;
+  font-family:Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+}
+
+.row{
+  text-align: center;
+  margin-top: 80%;
+}
+
+/*BOTÕES--------------------------------------------*/
+.ButtonBranco {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:inline-block;
+	cursor:pointer;
+	color:#28386b;
+	font-family:Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:14px 40px;
+  text-transform: uppercase;
+}
+.ButtonBranco:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonBranco:link{
+  text-decoration:none;
+}
+
+.ButtonPreto {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#28386b;
+	border-radius:14px;
+	border:2px solid #badaf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#badaf3;
+	font-family:Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 45px;
+  text-transform: uppercase;
+}
+.ButtonPreto:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonPreto:link{
+  text-decoration:none;
+}
+/*------------------------------------------------*/
+
+        
+
+

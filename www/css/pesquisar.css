@@ -1,0 +1,94 @@
+body {
+  padding: 20px;
+  background-color: white;
+}
+
+.btn-dark {
+  margin-left: 205px;
+  background-color: grey;
+  color:black;
+  margin-top: -50px;
+}
+
+h1{
+position: absolute;
+width: 9px;
+height: 40px;
+left: 85px;
+top: -8px;
+font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+color: #000000;
+}
+
+h3 {
+  margin-top: -55px;
+  font-size: 20px;
+  margin-left: 65px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 45px;
+  font-weight: bold;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+
+#voltar img {
+  width: 32px;
+  height: 32px;
+  margin-left: -35px;
+  margin-top: -20px;
+}
+
+.imagem{
+  width: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+#pesquisar {
+  background-image: url('/css/pesquisar.png');
+  margin-top: 20px;
+  background-position: 4px 3px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.pesquisar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pesquisar li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+.pesquisar li a:hover:not(.header) {
+  background-color: #eee;
+}
+

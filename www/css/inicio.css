@@ -1,0 +1,47 @@
+body {
+  background-color: white;
+}
+
+#menu ul {
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    padding:10px;
+    margin:0px;
+    background-color: #badaf3;
+    list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 14px 23.5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    background-color:white;
+    color: white;
+    border-top:3px solid #28386b;
+    border-radius:5px;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  margin-top: 4%;
+  font-size: 50px;
+  font-family: Comic Sans SM;
+}
+
+img {
+  margin-left: -12px;
+}
+
+.row{
+text-align : center;
+margin-top: 72%;
+}
+

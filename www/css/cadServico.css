@@ -1,0 +1,55 @@
+body {
+  padding: 20px;
+  background-color: white;
+}
+
+h1{
+  text-align: center;
+  color: black;
+  margin-top: -2%;
+  margin-left: 38px;
+  font-size: 36px;
+  font-family:Comfortaa;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  align-items: center;
+  letter-spacing: -0.015em;
+}
+
+#voltar img {
+  width: 32px;
+  height: 32px;
+  margin-left: -56px;
+  margin-top: -28px;
+}
+
+.row{
+ text-align : center;
+ margin-top: 30%;
+}
+
+.ButtonPreto {
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#28386b;
+	border-radius:14px;
+	border:2px solid #badaf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#badaf3;
+	font-family:Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 45px;
+  text-transform: uppercase;
+}
+.ButtonPreto:active {
+  box-shadow: none;
+	position:relative;
+}
+a.ButtonPreto:link{
+  text-decoration:none;
+}
+/*------------------------------------------------*/
+
+
