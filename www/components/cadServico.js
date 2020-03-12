@@ -3,11 +3,14 @@
 $(document).on("click","#ButtonPreto",function(){
 
     var parametros={
-      "nomeServico":$("#nomeServico").val(),
-      "":$("#").val(),
-       "CPF":$("#CPF").val(),
-       "email":$("#email").val(),
-       "telefone":$("#telefone").val()
+      "dsServico":$("#dsServico").val(),
+      "dsOrcamento":$("#dsOrcamento").val(),
+       "dsFormaPagamento":$("#dsFormaPagamento").val(),
+       "dsServicosAnteriores":$("#dsServicosAnteriores").val(),
+       "dsMediaTempo":$("#dsMediaTempo").val(),
+       "dsTempoServico":$("#dsTempoServico").val(),
+       "dsRestricoesExigencias":$("#dsRestricoesExigencias").val(),
+       "dsFotoServico":$("#dsFotoServico").val(),
     };
     $.ajax({
       type: post,
@@ -17,11 +20,14 @@ $(document).on("click","#ButtonPreto",function(){
     success: function(data){
     navigator.notification.alert(data);
 
-    $("nome").val("");
-    $("sobrenome").val("");
-    $("CPF").val("");
-    $("email").val("");
-    $("telefone").val("");
+    $("dsServico").val("");
+    $("dsOrcamento").val("");
+    $("dsFormaPagamento").val("");
+    $("dsServicosAnteriores").val("");
+    $("dsMediaTempo").val("");
+    $("dsTempoServico").val("");
+    $("dsRestricoesExigencias").val("");
+    $("dsFotoServico").val("");
       },
    error: function(data){
    navigator.notification.alert("Erro ao cadastrar");
