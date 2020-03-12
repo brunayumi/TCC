@@ -1,17 +1,42 @@
 body {
-  padding: 25px;
   background-color: white;
+}
+
+#menu ul {
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    padding:10px;
+    margin:0px;
+    background-color: #badaf3;
+    list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 8px 17.9px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    background-color:white;
+    color: white;
+    border-top:3px solid #28386b;
+    border-radius:5px;
 }
 
 .imagem {
   margin-top: -10px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 #voltar img {
   width: 32px;
   height: 32px;
-  margin-left: -56px;
+  margin-left: -16px;
   margin-top: -28px;
 }
 
@@ -74,7 +99,7 @@ margin-top: 2%;
 	background-color:#badaf3;
 	border-radius:14px;
 	border:2px solid #28386b;
-	display:block;
+	display:inline-block;
 	color: #28386b;
 	font-family: Comfortaa;
 	font-size:15px;
@@ -95,7 +120,7 @@ a.ButtonBranco:link{
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
-	display:block;
+	display:inline-block;
 	color: #badaf3;
 	font-family:Confortaa;
 	font-size:15px;

@@ -1,43 +1,41 @@
+/* ======================== CORPO ==================== */
 body {
   padding: 20px;
   background-color: white;
 }
+/* ===================================================== */
 
+/* ====================== ÍCONE DE FOTO ================== */
 .imagem {
-  margin-left: 80px;
-  margin-top: 50px;
+  margin-left: 60px;
+  margin-top: 10px;
 }
+/* ===================================================== */
 
+/* ====================== BOTÃO VOLTAR ================== */
 #voltar img {
   width: 32px;
   height: 32px;
   margin-left: -56px;
   margin-top: -28px;
 }
+/* ===================================================== */
 
-
+/* ======================== TÍTULO ==================== */
 h1{
   color: black;
   text-align: center;
-  margin-top: 5%;
+  margin-top: -3%;
   font-size: 40px;
   font-family: Comfortaa;
   letter-spacing: -0.015em;
 }
+/* ===================================================== */
 
-.btn-dark {
-  margin-left: 95px;
-  background-color: grey;
-  color:black;
-  margin-top: 20px;
-}
-
-.row{
-  text-align: center;
-  margin-top: 100px;
-}
-
-.ButtonPreto {
+/* ======================= BOTÕES ======================= */
+.btnEscuro {
+  margin-left: 40px;
+  margin-top:100px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
@@ -51,14 +49,18 @@ h1{
 	padding:15px 30px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonPreto:link{
+.btnEscuro:hover{
+ color: #badaf3;
+}
+a.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
+/* ===================================================== */
+
 
         
 
