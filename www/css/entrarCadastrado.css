@@ -52,6 +52,10 @@ h1{
 .ButtonPreto:active {
   box-shadow: none;
 }
+.ButtonPreto:hover {
+  color: #badaf3;
+}
+
 a.ButtonPreto:link{
   text-decoration:none;
 }

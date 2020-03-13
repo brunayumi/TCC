@@ -19,7 +19,7 @@ position: absolute;
 width: 9px;
 height: 40px;
 left: 85px;
-top: 67px;
+top: -10px;
 font-family: Comfortaa;
 font-style: normal;
 font-weight: normal;
@@ -73,6 +73,9 @@ a.ButtonBranco:link{
 	font-weight:bold;
 	padding:16px 40px;
   text-transform: uppercase;
+}
+.ButtonPreto:hover{
+  color:#badaf3;
 }
 .ButtonPreto:active {
   box-shadow: none;
