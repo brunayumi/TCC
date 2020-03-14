@@ -1,7 +1,10 @@
+/* ======================== CORPO ==================== */
 body {
   background-color: white;
 }
+/* ===================================================== */
 
+/* ======================== MENU ==================== */
 #menu ul {
     overflow: hidden;
     width: 100%;
@@ -16,7 +19,7 @@ body {
 #menu ul li { display: inline; }
 
 #menu ul li a {
-    padding: 14px 23.5px;
+    padding: 9px 23.5px;
     display: inline-block;
     text-decoration: none;
 }
@@ -28,20 +31,19 @@ body {
     border-radius:5px;
 }
 
+/* ======================== ÍCONES DO MENU ==================== */
+img {
+  margin-left: -12px;
+}
+/* ===================================================== */
+
+/* ======================== TÍTULO ==================== */
 h1{
   color: black;
   text-align: center;
   margin-top: 4%;
   font-size: 50px;
-  font-family: Comic Sans SM;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
 }
-
-img {
-  margin-left: -12px;
-}
-
-.row{
-text-align : center;
-margin-top: 72%;
-}
-
+/* ===================================================== */

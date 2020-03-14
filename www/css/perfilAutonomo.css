@@ -1,7 +1,10 @@
+/* ======================== CORPO ==================== */
 body {
   background-color: white;
 }
+/* ===================================================== */
 
+/* ======================== MENU ==================== */
 #menu ul {
     overflow: hidden;
     width: 100%;
@@ -16,7 +19,7 @@ body {
 #menu ul li { display: inline; }
 
 #menu ul li a {
-    padding: 8px 17.9px;
+    padding: 8px 17.5px;
     display: inline-block;
     text-decoration: none;
 }
@@ -27,32 +30,41 @@ body {
     border-top:3px solid #28386b;
     border-radius:5px;
 }
+/* ===================================================== */
 
+/* ======================== IMAGEM DO PERFIL ==================== */
 .imagem {
-  margin-top: -10px;
-  margin-left: 40px;
+  margin-top: -40px;
+  margin-left: 80px;
 }
+/* ===================================================== */
 
+
+/* ======================== BOTÃO VOLTAR ==================== */
 #voltar img {
   width: 32px;
   height: 32px;
   margin-left: -16px;
-  margin-top: -28px;
+  margin-top: -48px;
 }
+/* ===================================================== */
 
+/* ======================== CAIXA DE TEXTO ==================== */
 #textarea {
-margin-top: 75px;
+margin-top: 16px;
 width: 334px;
 height: 102px;
 background: rgba(0, 0, 0, 0.03); 
 }
+/* ===================================================== */
 
+/* ======================== SUBTÍTULO ==================== */
 h2 {
 position: absolute;
 width: 9px;
 height: 40px;
 left: 150px;
-margin-top: 40px;
+margin-top: -16px;
 font-family: Comfortaa;
 font-style: normal;
 font-weight: normal;
@@ -65,62 +77,33 @@ letter-spacing: -0.015em;
 color: #000000; 
 text-transform: uppercase;
 }
+/* ===================================================== */
 
+/* ======================== TÍTULO ==================== */
 h1{
-position: absolute;
-width: 9px;
-height: 40px;
-left: 80px;
-margin-top: 10px;
-font-family: Comfortaa;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 40px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.015em;
-color: #000000;
+  margin-right: 10px;
+  color: black;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+/* ===================================================== */
+
+/* ======================== BOTÕES ==================== */
+.btns {
+  margin-top: 10%;
 }
 
-.buttons {
-  margin-top: 5%;
-}
-
-.row{
-text-align : center;
-margin-top: 2%;
-}
-
-/*BOTÕES--------------------------------------------*/
-.ButtonBranco {
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-	background-color:#badaf3;
-	border-radius:14px;
-	border:2px solid #28386b;
-	display:inline-block;
-	color: #28386b;
-	font-family: Comfortaa;
-	font-size:15px;
-	font-weight:bold;
-	padding:7px 29px;
-  text-transform: uppercase;
-}
-.ButtonBranco:active {
-  box-shadow: none;
-	position:relative;
-}
-a.ButtonBranco:link{
-  text-decoration:none;
-}
-
-.ButtonPreto {
+.btnEscuro {
+  text-align: center;
+  margin-top: 2%;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
-	display:inline-block;
+	display:block;
 	color: #badaf3;
 	font-family:Confortaa;
 	font-size:15px;
@@ -128,13 +111,16 @@ a.ButtonBranco:link{
 	padding:7px 49px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonPreto:link{
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
+/* ===================================================== */
 
         
