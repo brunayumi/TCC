@@ -1,84 +1,114 @@
+/* ======================== CORPO ==================== */
 body {
   padding: 25px;
   background-color:white;
 }
+/* ===================================================== */
 
+/* ======================== INPUTS ==================== */
+  :focus {
+    outline: none;
+  }
+  
+  .content {
+    width: 300px;
+    position: relative;
+  }
+  
+  .input {
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid #929fba;
+  }
+  
+  .input ~ .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+  }
+  
+  .input:focus ~ .border {
+    width: 100%;
+    transition: 0.5s;
+  }
+
+.border {
+      border: 1px solid #28386b!important;
+  }
+ /* =================================================== */ 
+
+/* ======================== TÍTULO ==================== */
 h1{
-  color: black;
+  margin-top: -10px;
   text-align: center;
-  margin-top: -3%;
-  font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
-  margin-left: 110px;
+  color: black;
+  font-size: 48px;
+  font-family:Comfortaa;
   font-style: normal;
   font-weight: normal;
   line-height: 40px;
   display: flex;
   align-items: center;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.015em;
 }
+/* ======================================================= */ 
 
+/* ======================= FORMULÁRIO ==================== */
+form {
+  text-align:center;
+}
+/* ======================================================= */
 
+/* ====================== BOTÃO VOLTAR ================== */
 #voltar img {
-  width: 36px;
-  height: 36px;
-  margin-left: -10px;
-  margin-top: -1px;
+  width: 32px;
+  height: 32px;
+  margin-left: -56px;
+  margin-top: -28px;
+}
+/* ====================================================== */
+
+
+/* ======================= BOTÕES ======================= */
+.col-xs-6{
+ text-align : center;
+ margin-top: 60%;
 }
 
-.btn-block {
-  width: 44px;
-  height:50px;
-  margin-left: -30px;
-  margin-top: -12px;
-  background-color: white;
-}
-
-.ButtonPreto {
-  margin-top:100px;
-  margin-left: 120px;
+.btnEscuro {
+  margin-left: 80px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
 	display:inline-block;
+	cursor:pointer;
 	color:#badaf3;
-	font-family:'Times New Roman', Times, serif;
+	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:15px 30px;
+	padding:11px 35px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
+	position:relative;
 }
-.ButtonPreto:hover {
-  color: #badaf3;
+.btnEscuro:hover{
+  color:#badaf3;
 }
-
-a.ButtonPreto:link{
+.btnEscuro:link{
   text-decoration:none;
 }
+/* ====================================================== */
 
-#email {
-  border-radius: 50px;
-  background: rgba(0, 0, 0, 0.03); 
-  width: 316px;
-  height: 42px;
+/* ======================= LINK SENHA ======================= */
+.col-xs-8{
+  margin-left: 133px;
   font-size: 20px;
   font-family:'Times New Roman', Times, serif;
 }
-
-#senha {
-  border-radius: 50px;
-  background: rgba(0, 0, 0, 0.03); 
-  width: 316px;
-  height: 42px;
-  font-size: 20px;
-  font-family:'Times New Roman', Times, serif;
-}
-
-span {
-  font-family:'Times New Roman', Times, serif;
-  margin-left: 218px;
-}
+/* ====================================================== */
