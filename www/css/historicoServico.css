@@ -1,85 +1,82 @@
+/* ======================== CORPO ==================== */
 body {
-  padding: 20px;
+  padding: 25px;
   background-color:white;
 }
+/* ===================================================== */
 
-.imagem {
-  margin-left: -30px;
-  margin-top: px;
-  width: 60px;
-}
-
+/* ====================== BOTÃO VOLTAR ================== */
 #voltar img {
   width: 32px;
   height: 32px;
   margin-left: -56px;
   margin-top: -28px;
 }
+/* ====================================================== */
 
+/* ======================== TÍTULO ==================== */
 h1{
+  margin-right: 10px;
   color: black;
   text-align: center;
-  margin-top: 2%;
-  font-size: 35px;
+  margin-top: -14%;
+  font-size: 50px;
   font-family: Comfortaa;
   letter-spacing: -0.015em;
 }
+/* ======================================================= */ 
+/* ======================= BOTÕES ======================= */
 
-.buttons {
-  margin-top: 10px;
+.col-xs-12{
+ text-align : center;
+ margin-top: 3%;
 }
 
-.row{
-  text-align: center;
-  margin-top: 10px;
-}
-
-/*BOTÕES--------------------------------------------*/
-.ButtonBranco {
+.btnClaro{
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#badaf3;
 	border-radius:14px;
 	border:2px solid #28386b;
-	display:block;
-	color: #28386b;
-	font-family: Comfortaa;
+	display:inline-block;
+	cursor:pointer;
+	color:#28386b;
+	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:14px 40px;
+	padding:8px 50px;
   text-transform: uppercase;
 }
-.ButtonBranco:active {
+.btnClaro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonBranco:link{
+.btnClaro:link{
   text-decoration:none;
 }
 
-.ButtonPreto {
+.btnEscuro {
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
-	display:block;
+	display:inline-block;
 	cursor:pointer;
 	color:#badaf3;
 	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:15px 30px;
+	padding:11px 45px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonPreto:link{
+.btnEscuro:hover{
+  color:#badaf3;
+}
+.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
-
-        
-
-
+/* ====================================================== */
 

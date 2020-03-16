@@ -1,71 +1,49 @@
+/* ======================== CORPO ==================== */
 body {
-  padding: 25px;
   background-color: white;
 }
+/* ===================================================== */
 
+/* ======================== BOTÃO VOLTAR ==================== */
 #voltar img {
   width: 32px;
   height: 32px;
-  margin-left: -56px;
-  margin-top: -28px;
+  margin-left: -16px;
+  margin-top: -48px;
 }
+/* ===================================================== */
 
+/* ======================== TÍTULO ==================== */
 h1{
-position: absolute;
-width: 9px;
-height: 40px;
-left: 100px;
-margin-top: 30px;
-font-family: Comfortaa;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 40px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.015em;
-color: #000000;
+  margin-right: 10px;
+  color: black;
+  text-align: center;
+  margin-top: -20%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
 }
+/* ===================================================== */
 
-.buttons {
-  margin-top: 25%;
-}
-
-.row{
-text-align : center;
-margin-top: 2%;
-}
-
+/* ======================== IMAGEM DO PERFIL ==================== */
 .imagem {
   width: 50px;
   height: 50px;
   margin-left: 500px;
 }
+/* ===================================================== */
 
-/*BOTÕES--------------------------------------------*/
-.ButtonBranco {
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-	background-color:#badaf3;
-	border-radius:14px;
-	border:2px solid #28386b;
-	display:block;
-	color: #28386b;
-	font-family: Comfortaa;
-	font-size:15px;
-	font-weight:bold;
-	padding:14px 40px;
-  text-transform: uppercase;
-}
-.ButtonBranco:active {
-  box-shadow: none;
-	position:relative;
-}
-a.ButtonBranco:link{
-  text-decoration:none;
+/* ======================== BOTÕES ==================== */
+.btns {
+  margin-top: 10%;
 }
 
-.ButtonPreto {
+.col-xs-12 {
+  margin-top: 2%;
+}
+
+.btnEscuro {
+  text-align: center;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
@@ -75,16 +53,43 @@ a.ButtonBranco:link{
 	font-family:Confortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:15px 30px;
+	padding:7px 49px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonPreto:link{
+.btnEscuro:hover {
+  color: #badaf3;
+}
+a.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
+
+.btnClaro {  
+  text-align: center;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:block;
+	cursor:pointer;
+	color:#28386b;
+	font-family:Comfortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding: 7px 49px;
+  text-transform: uppercase;
+}
+.btnClaro:active {
+  box-shadow: none;
+	position:relative;
+}
+.btnClaro:link{
+  text-decoration:none;
+}
+/* ===================================================== */
+
 
         

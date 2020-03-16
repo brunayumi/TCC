@@ -15,48 +15,51 @@
 <body>
    <div class="col-xs-2">
     <div class="form-group">
-        <a class="btn btn-block" href="inicio.html"  id="voltar" role="button"><img src="btn_voltar.png"></a>
+        <a class="btn btn-block" href="servicos.html"  id="voltar" role="button"><img src="btn_voltar.png"></a>
        </div>
     </div>
+  <div class="col-xs-12"> 
   <h1>Cadastro de serviço</h1>
   <hr>
-  <form action="cadAutonomo" method="post">
-    <div>
-        <label for="nomeServico">Nome do Serviço:</label>
-        <input type="text" id="nomeServico" />
+  </div>
+  <form action="cadServico" method="post">
+    <div class="col-xs-12">
+      <div class="content mt-5 mx-auto">
+      <input class="input" id="nomeServico" type="text" placeholder="Nome">
+      <span class="border"></span>
     </div>
-     <div>
-        <label for="descrServico">Descrição:</label>
-        <input type="textarea" id="descrServico" />
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="descrServico" type="text" placeholder="Descrição">
+      <span class="border"></span>
     </div>
-    <div>
-        <label for="orcamentoServico">Orçamento:</label>
-        <input type="text" id="orcamentoServico" />
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="orcamentoServico" type="number" placeholder="Orçamento">
+      <span class="border"></span>
     </div>
-     <div>
-        <label for="pagamentoServico">Forma de Pagamento:</label>
-        <input type="number" id="pagamentoServico" />
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="pagamentoServico" type="text" placeholder="Forma de Pagamento">
+      <span class="border"></span>
     </div>
-    <div>
-        <label for="servRealizados">Serviços realizados anteriormente:</label>
-        <input type="text" id="telefoneAut" />
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="servRealizados" type="text" placeholder="Serviços realizados anteriormente">
+      <span class="border"></span>
     </div>
-    <div>
-        <label for="indicaServico">Indicações de Cliente:</label>
-        <input type="text" id="telefoneAut" />
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="indicaServico" type="text" placeholder="Indicações de cliente">
+      <span class="border"></span>
     </div>
-    <div>
-        <label for="tempoServico">Tempo para executar o serviço:</label>
-        <input type="text" id="telefoneAut" />
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="tempoServico" type="text" placeholder="Tempo para executar o serviço">
+      <span class="border"></span>
     </div>
-    <div>
-        <label for="tempoRamo">Quanto tempo esta nesse ramo?:</label>
-        <input type="text" id="telefoneAut" />
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="tempoRamo" type="text" placeholder="Quanto tempo atua no ramo">
+      <span class="border"></span>
     </div>
 
 </form>
- <div class="row">
-   <a href="cadAutonomo2.html" class="ButtonPreto">Cadastrar Serviço</a>
-  </div>
+ <div class="col-xs-6">
+   <a href="cadAutonomo2.html" class="btnEscuro">Cadastrar Serviço</a>
+ </div>
 </body>
 </html>
