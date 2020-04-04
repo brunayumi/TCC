@@ -1,7 +1,14 @@
 /* ======================== CORPO ==================== */
-body {
-  padding: 25px;
-  background-color: white;
+.box {
+  transform: translate(-50%,-50%);
+  margin-left: 164px;
+  position: absolute;
+  top: 54%;
+  width: 23rem;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 5px solid #badaf3;
+  border-radius: 15px;
 }
 /* ===================================================== */
 
@@ -24,7 +31,7 @@ body {
   
   .input ~ .border {
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     left: 0;
     width: 0;
     height: 1px;
@@ -40,84 +47,86 @@ body {
   }
  /* =================================================== */ 
 
+/* ======================== SUBTÍTULO ==================== */
+h5 {
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #28386b;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 15px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+/* ===================================================== */
+
 /* ======================== TÍTULO ==================== */
 h1{
-  margin-right: 10px;
-  color: black;
+  margin-right: 20px;
+  color: #28386b;
   text-align: center;
-  margin-top: -10%;
+  margin-top: 2%;
   font-size: 50px;
   font-family: Comfortaa;
   letter-spacing: -0.015em;
 }
-/* ======================================================= */ 
+/* ===================================================== */
 
-/* ======================= FORMULÁRIO ==================== */
-form {
-  text-align:center;
-}
-/* ======================================================= */
-
-/* ======================= BOTÕES ======================= */
-.col-xs-6{
- text-align : center;
- margin-top: 60%;
-}
-
-.btnClaro{
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-	background-color:#badaf3;
-	border-radius:14px;
-	border:2px solid #28386b;
-	display:inline-block;
-	cursor:pointer;
-	color:#28386b;
-	font-family:Comfortaa;
-	font-size:15px;
-	font-weight:bold;
-	padding:10px 30px;
-  text-transform: uppercase;
-}
-.btnClaro:active {
-  box-shadow: none;
-	position:relative;
-}
-.btnClaro:link{
-  text-decoration:none;
-}
+/* ======================== BOTÕES ==================== */
 
 .btnEscuro {
-  margin-top: -1px;
+  margin-left: -20px;
+  width: 120px;
+  text-align: center;
+  margin-top: 2%;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
-	display:inline-block;
-	cursor:pointer;
-	color:#badaf3;
-	font-family:Comfortaa;
-	font-size:15px;
+	display:block;
+	color: #badaf3;
+	font-family:Confortaa;
+	font-size:13px;
 	font-weight:bold;
-	padding:11px 35px;
+	padding:7.5px 2px;
   text-transform: uppercase;
 }
 .btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-.btnEscuro:hover{
+.btnEscuro:hover {
   color:#badaf3;
 }
-.btnEscuro:link{
+a.btnEscuro:link{
   text-decoration:none;
 }
-/* ====================================================== */
 
-/* ====================== BOTÃO VOLTAR ================== */
-#voltar img {
-  width: 32px;
-  height: 32px;
-  margin-left: -56px;
-  margin-top: -28px;
+.btnClaro {
+  margin-left: 62px;
+  width: 120px;
+  text-align: center;
+  margin-top: 3%;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:block;
+	color: #28386b;
+	font-family:Confortaa;
+	font-size:13px;
+	font-weight:bold;
+	padding:7px 2px;
+  text-transform: uppercase;
 }
-/* ====================================================== */
+.btnEscuro:active {
+  box-shadow: none;
+	position:relative;
+}
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
+  text-decoration:none;
+}
+/* ===================================================== */

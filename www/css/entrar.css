@@ -1,7 +1,14 @@
 /* ======================== CORPO ==================== */
-body {
-  padding: 25px;
-  background-color: white;
+.box {
+  transform: translate(-50%,-50%);
+  margin-left: 168px;
+  position: absolute;
+  top: 34%;
+  width: 23rem;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 5px solid #badaf3;
+  border-radius: 15px;
 }
 /* ===================================================== */
 
@@ -9,17 +16,17 @@ body {
 #voltar img {
   width: 32px;
   height: 32px;
-  margin-left: -56px;
-  margin-top: -28px;
+  margin-left: -320px;
+  margin-top: 8px;
 }
 /* ====================================================== */
 
 /* ======================== TÍTULO ==================== */
 h1{
   margin-right: 10px;
-  color: black;
+  color: #28386b;
   text-align: center;
-  margin-top: -10%;
+  margin-top: 2%;
   font-size: 50px;
   font-family: Comfortaa;
   letter-spacing: -0.015em;
@@ -31,11 +38,7 @@ h1{
 
 .col-xs-12{
  text-align : center;
- margin-top: 4%;
-}
-
-.btns {
- margin-top: 100%;
+ padding: 10px;
 }
 
 .btnClaro{

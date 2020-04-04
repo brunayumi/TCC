@@ -4,38 +4,62 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-   <script src="components/jquery-3.4.1.min.js"></script>
-  <script src="components/codigo.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
+  <script src="components/main.js"></script>
+	<script type="components/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/be184030a6.js"></script>
 
   <link rel="stylesheet" href="components/Bootstrap/loader.css">
   <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/fotoAutonomo.css">
 </head>
 <body>
-   <div class="col-xs-2">
-    <div class="form-group">
-        <a class="btn btn-block" href="cadAutonomo2.html"  id="voltar" role="button"><img src="btn_voltar.png"></a>
-       </div>
-    </div>
-    <div class="col-xs-12">
-      <h1>Escolha uma foto para o seu perfil:</h1>
-    <hr>
-    </div>
+  <!----------------------------------------------- CORPO ----------------------------------------------->
+  		<div class="container">
+      <h1>Agora a última etapa:</h1>
+        <div class="box">
   <form action="cadAutonomo" method="post">
-    <div class="col-xs-12">
-      <img class="imagem" src="perfil.png">
+    <div class="row">
+      <div class="col-xs-12">
+      <div class="content mt-5 mx-auto">
+	  <input class="input" type="file" id="fotoAutonomo">
+</div>
+</div>
     </div>
- <div class="col-xs-12">
-  <form>
-  <div class="form-group">
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  <div class="row">   
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="loginAut" type="text" placeholder="Login">
+      <span class="border"></span>
+    </div>
   </div>
-</form>
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="senhaAut" type="text" placeholder="Senha">
+      <span class="border"></span>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="confsenhaAut" type="text" placeholder="Confirmar senha">
+      <span class="border"></span>
+    </div>
+  </div>
 </div>
 </form>
-<div class="col-xs-12">
-   <a class="btnEscuro" href="inicioA.html" role="button">Finalizar cadastro</a>
-</div>
+<br>
+		<div class="row">
+				<div class="col-xs-4">
+					<button class="btn btnEscuro btn-block" onclick="cadA()" id="btnVoltar">Cancelar</button>
+				</div>
+				<div class="col-xs-4">
+					<button class="btn btnClaro btn-block"  onclick="inicioA()" id="btnFinalizar">Finalizar</button>
+				</div>
+			</div>
+      </div>
+    </div>
 </body>
+<!-----------------------------------------------------------------------------------------------------> 
 </html>

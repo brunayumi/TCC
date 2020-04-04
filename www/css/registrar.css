@@ -5,6 +5,10 @@ body {
 }
 /* ===================================================== */
 
+#hr{
+  border-color: #28386b;
+}
+
 /* ====================== BOTÃO VOLTAR ================== */
 #voltar img {
   width: 32px;
@@ -17,7 +21,7 @@ body {
 /* ======================== TÍTULO ==================== */
 h1{
   margin-right: 10px;
-  color: black;
+  color: #28386b;
   text-align: center;
   margin-top: -10%;
   font-size: 50px;
@@ -33,7 +37,7 @@ h1{
 }
 
 .btns {
- margin-top: 100%;
+ margin-top: 30%;
 }
 
 .btnClaro{

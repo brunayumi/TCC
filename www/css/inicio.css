@@ -1,49 +1,169 @@
 /* ======================== CORPO ==================== */
-body {
-  background-color: white;
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    background-color: white;
+}
+.content{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 4px;
 }
 /* ===================================================== */
 
-/* ======================== MENU ==================== */
-#menu ul {
-    overflow: hidden;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    padding:10px;
-    margin:0px;
-    background-color: #badaf3;
-    list-style:none;
-}
-
-#menu ul li { display: inline; }
-
-#menu ul li a {
-    padding: 9px 23.5px;
-    display: inline-block;
-    text-decoration: none;
-}
-
-#menu ul li a:hover {
-    background-color:white;
-    color: white;
-    border-top:3px solid #28386b;
-    border-radius:5px;
-}
-
-/* ======================== ÍCONES DO MENU ==================== */
-img {
-  margin-left: -12px;
+/* ======================== SUBTÍTULO ==================== */
+h5 {
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #28386b;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 15px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
 }
 /* ===================================================== */
 
 /* ======================== TÍTULO ==================== */
 h1{
-  color: black;
+  margin-right: 20px;
+  color: #28386b;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 2%;
   font-size: 50px;
   font-family: Comfortaa;
   letter-spacing: -0.015em;
+}
+/* ===================================================== */
+
+/* ================== BOOT CSS ========================= */
+.clear{clear: both;}
+.center{padding: 0 2%; margin: 0 auto;}
+
+.w100{
+    width: 100%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* ===================================================== */
+
+/* ===================== MENU SUPERIOR ================= */
+header{
+    position: relative;
+    left: 300px;    
+    padding: 10px 0;
+    height: 55px;
+    background-color: #badaf3;
+    width: calc(100% - 300px);
+}
+/* ===================================================== */
+
+/* ===================== MENU LATERAL ================= */
+div.menu-wrapper{width: 300px;}
+div.menu{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background: #badaf3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    padding: 10px;
+}
+.menu-btn{
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+}
+#user{
+  font-size: 80px;
+  margin-top: 5%;
+  margin-left: 28%;
+}
+#btn{
+  background-color: transparent;
+  border-color: transparent;
+  color: #28386b;
+}
+#btn:link{
+  text-decoration:none;
+}
+
+#hr{
+  border-color: #28386b;
+}
+/* ===================================================== */
+
+/* ========= SE A TELA FOR MENOR QUE 768 =============== */
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        left: 0;
+    }
+    header{
+        left: 0;
+        width: 100%;
+    }
+}
+/* ===================================================== */
+
+/* ========= SE A TELA FOR MENOR QUE 400 =============== */
+@media screen and (max-width: 400px){
+    div.menu-wrapper{
+        width: 180px;
+    }
+    .menu{
+        width: 200px;
+    }
+}
+/* ===================================================== */
+
+/* ============== IMAGEM DO PERFIL  ==================== */
+.circleusu {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 70px;
+  height:70px;
+  margin-top: 10%;
+  margin-left: 34%;
+  overflow: hidden;
+  position: relative;
+}
+.circleusu img {
+  position: center;
+  bottom: 0;
+   width: 100px;
+  height:100px;
+}
+.perfil {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 100px;
+  height:100px;
+  margin-top: 1%;
+  margin-left: 34%;
+  overflow: hidden;
+  position: relative;
+}
+.perfil img {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
 }
 /* ===================================================== */
