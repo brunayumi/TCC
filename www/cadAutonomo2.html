@@ -4,22 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-
   <script src="components/loader.js"></script>
-   <script src="components/jquery-3.4.1.min.js"></script>
-  <script src="components/codigo.js"></script>
-  <script src="components/cadAutonomo.js"></script>
-
   <script src="components/jquery-3.4.1.min.js"></script>
   <script src="components/acao.js"></script>
   <script src="components/main.js"></script>
 	<script type="components/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/be184030a6.js"></script>
+  <script src="components/cadAutonomo.js"></script>
 
   <link rel="stylesheet" href="components/Bootstrap/loader.css">
   <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="css/cadAutonomo.css">
+  <link rel="stylesheet" href="css/cadAutonomo2.css">
 </head>
 <body>
 
@@ -32,56 +28,45 @@
  <h5><b>Endereço:</b></h5>
     <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="enderecoAut" type="text" placeholder="Rua">
+      <input class="input" id="enderecoAut" type="text" placeholder="Rua" required>
       <span class="border"></span>
     </div>
   </div>
   <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="numeroAut" type="number" placeholder="Nº">
+      <input class="input" id="numeroAut" type="number" placeholder="Nº" required>
       <span class="border"></span>
     </div>
 </div>
 <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="bairroAut" type="text" placeholder="Bairro">
+      <input class="input" id="bairroAut" type="text" placeholder="Bairro" required>
       <span class="border"></span>
     </div>
-
-    <div class="content mt-5 mx-auto">
-      <input class="input" id="senhaAut" type="text" placeholder="Senha">
-      <span class="border"></span>
-    </div>
-    <div class="content mt-5 mx-auto">
-      <input class="input" id="confsenhaAut" type="text" placeholder="Confirmar Senha">
-      <span class="border"></span>
-    </div>
-    </div>
-</form>
-<div class="col-xs-6">
-   <a href="index.html" class="btnClaro" role="button">Cancelar</a>
- </div>
-<div class="col-xs-6">
-   <a href="fotoAutonomo.html" class="btnEscuro" role="button" ">Próximo</a>
-
 </div>
+<div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="cidadeAut" type="text" placeholder="Cidade" required>
+      <span class="border"></span>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="estadoAut" type="text" placeholder="Estado" required>
+      <span class="border"></span>
+    </div>
 </div>
 </form>
       <br>
-				<div class="col-xs-4">
-					<button class="btn btnEscuro btn-block" onclick="cadastrarDados()" id="btnVoltar">Cancelar</button>
+					<div class="col-xs-4">
+          <a class="btnEscuro" href="cadAutonomo.html" role="button">Cancelar</a>
 				</div>
-        <div class="row">
+    
 				<div class="col-xs-4">
-					<button class="btn btnClaro btn-block"  onclick="fotoAutonomo()" id="btnProximo">Próximo</button>
+           <a class="btnClaro" href="fotoAutonomo.html" role="button">Próximo</a>
 				</div>
-			</div>
   	</div>
   </div>
 </body>
 <!----------------------------------------------------------------------------------------------------->
-
-<!------------------------------------------- BOOT CSS ------------------------------------------------>
- 	<div class="clear"></div>
-<!-----------------------------------------------------------------------------------------------------> 
 </html>

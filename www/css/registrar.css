@@ -1,20 +1,23 @@
 /* ======================== CORPO ==================== */
-body {
-  padding: 25px;
-  background-color: white;
+.box {
+  transform: translate(-50%,-50%);
+  margin-left: 168px;
+  position: absolute;
+  top: 54%;
+  width: 33rem;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 5px solid #badaf3;
+  border-radius: 15px;
 }
 /* ===================================================== */
-
-#hr{
-  border-color: #28386b;
-}
 
 /* ====================== BOTÃO VOLTAR ================== */
 #voltar img {
   width: 32px;
   height: 32px;
-  margin-left: -56px;
-  margin-top: -28px;
+  margin-left: -320px;
+  margin-top: 8px;
 }
 /* ====================================================== */
 
@@ -23,21 +26,19 @@ h1{
   margin-right: 10px;
   color: #28386b;
   text-align: center;
-  margin-top: -10%;
+  margin-top: 2%;
   font-size: 50px;
   font-family: Comfortaa;
   letter-spacing: -0.015em;
 }
 /* ======================================================= */ 
 
+
 /* ======================= BOTÕES ======================= */
+
 .col-xs-12{
  text-align : center;
- margin-top: 4%;
-}
-
-.btns {
- margin-top: 30%;
+ padding: 10px;
 }
 
 .btnClaro{
@@ -51,7 +52,7 @@ h1{
 	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:8px 55px;
+	padding:8px 42px;
   text-transform: uppercase;
 }
 .btnClaro:active {
@@ -73,7 +74,7 @@ h1{
 	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:11px 45px;
+	padding:11px 35px;
   text-transform: uppercase;
 }
 .btnEscuro:active {
@@ -87,6 +88,3 @@ h1{
   text-decoration:none;
 }
 /* ====================================================== */
-
-        
-

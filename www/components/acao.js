@@ -23,26 +23,14 @@ function recomendacoes(){
 function perfilA(){
   location.href = "perfilAutonomo.html";
 }
-function cadAutonomo(){
-  location.href = "cadAutonomo.html";
-}
 function cadAutonomo2(){
   location.href = "cadAutonomo2.html";
-}
-function fotoAutonomo(){
-  location.href = "fotoAutonomo.html";
 }
 function visualizarServicos(){
   location.href="visualizarServicos.html";
 }
 function registrar(){
   location.href="registrar.html";
-}
-function cadastrarDados(){
-  location.href="cadAutonomo.html";
-}
-function cadA(){
-  location.href="cadAutonomo2.html";
 }
 
 /* ===================================================== */
@@ -51,7 +39,7 @@ function cadA(){
 function preencherServico() {
   $.ajax({
     type: "post", //como enviar
-    url: "https://.000webhostapp.com/.php",//para onde enviar
+    url: "https://adatcc.000webhostapp.com/.php",//para onde enviar
     data: 'id=' + localStorage.getItem('cdAutonomo'),
     dataType: 'json',//o que enviar
     //se der certo
@@ -66,9 +54,9 @@ function preencherServico() {
       $("#enderecoAut").val(data.perfil.endereco);
       $("#numeroAut").val(data.perfil.numero);
       $("#bairroAut").val(data.perfil.bairro);
-      $("#foto").attr('src', 'https://.000webhostapp.com/' + data.perfil.foto);
-      $("#img").attr('src', 'https://.000webhostapp.com/' + data.perfil.foto);
-      $("#perfil").attr('src', 'https://.000webhostapp.com/' + data.perfil.foto);
+      $("#fotoAut").attr('src', 'https://adatcc.000webhostapp.com/' + data.perfil.foto);
+      $("#img").attr('src', 'https://adatcc.000webhostapp.com/' + data.perfil.foto);
+      $("#perfil").attr('src', 'https://adatcc.000webhostapp.com/' + data.perfil.foto);
 
     },
     //se der errado
@@ -126,7 +114,7 @@ $(document).on('click', '#btnSalvar', function () {
   };
   $.ajax({
     type: "post", //como enviar
-    url: "https://.000webhostapp.com/.php", //para onde enviar
+    url: "https://adatcc.000webhostapp.com/.php", //para onde enviar
     data: parametros, //o que enviar
     //se der certo
     success: function (data) {
@@ -152,7 +140,7 @@ $(document).on('click', '#btnVoltar', function () {
 function preencherServico() {
   $.ajax({
     type: "post", //como enviar
-    url: "https://.000webhostapp.com/.php",//para onde enviar
+    url: "https://adatcc.000webhostapp.com/.php",//para onde enviar
     data: 'id=' + localStorage.getItem('cdServico'),
     dataType: 'json',//o que enviar
     //se der certo
@@ -215,7 +203,7 @@ $(document).on('click', '#btnSalvar', function () {
   };
   $.ajax({
     type: "post", //como enviar
-    url: "https://.000webhostapp.com/.php", //para onde enviar
+    url: "https://adatcc.000webhostapp.com/.php", //para onde enviar
     data: parametros, //o que enviar
     //se der certo
     success: function (data) {
@@ -241,7 +229,7 @@ function visualizarServicos() {
 
   $.ajax({
     type: "POST", //como enviar
-    url: "https://.000webhostapp.com/.php",//para onde enviar
+    url: "https://adatcc.000webhostapp.com/.php",//para onde enviar
     dataType: 'json',//o que enviar
     //se der certo
     success: function (data) {
