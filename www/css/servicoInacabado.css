@@ -4,12 +4,6 @@ body {
 }
 /* ===================================================== */
 
-/* ======================== IMAGEM DO PERFIL ==================== */
-.imagem {
-  width: 60px;
-}
-/* ===================================================== */
-
 /* ======================== BOTÃO VOLTAR ==================== */
 #voltar img {
   width: 32px;
@@ -31,20 +25,21 @@ h1{
 }
 /* ===================================================== */
 
-/* ======================== NOME DO PERFIL ==================== */
+/* ======================== SUBTÍTULO ==================== */
 h2 {
-  margin-top: -55px;
-  font-size: 20px;
-  margin-left: 65px;
-  font-weight: bold;
-  font-family: Comfortaa;
-  letter-spacing: -0.015em;
+margin-top: -16px;
+font-family: Comfortaa;
+font-size: 24px;
+text-align: center;
+letter-spacing: -0.015em;
+color: #000000; 
+text-transform: uppercase;
 }
 /* ===================================================== */
 
 /* ============================ BOTÕES ========================= */
 .btnClaro {
-  margin-left: 60px;
+  margin-left: 110px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#badaf3;
 	border-radius:14px;
@@ -54,7 +49,7 @@ h2 {
 	font-family: Comfortaa;
 	font-size:10px;
 	font-weight:bold;
-	padding:9px 20px;
+	padding:9px 36px;
   text-transform: uppercase;
 }
 .btnClaro:active {
@@ -66,6 +61,8 @@ a.btnClaro:link{
 }
 
 .btnEscuro {
+  margin-top: 10px;
+  margin-left: 110px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
@@ -76,7 +73,7 @@ a.btnClaro:link{
 	font-family:Comfortaa;
 	font-size:10px;
 	font-weight:bold;
-	padding:10px 20px;
+	padding:11px 36px;
   text-transform: uppercase;
 }
 .btnEscuro:active {
@@ -92,7 +89,9 @@ a.btnEscuro:link{
 /* ===================================================== */
 
         
+        
 
+        
 
 
 

@@ -1,89 +1,90 @@
-body {
-  padding: 25px;
-  background-color: white;
+/* ======================== CORPO ==================== */
+.box {
+  transform: translate(-50%,-50%);
+  margin-left: 168px;
+  position: absolute;
+  top: 34%;
+  width: 23rem;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 5px solid #badaf3;
+  border-radius: 15px;
 }
+/* ===================================================== */
 
+/* ====================== BOTÃO VOLTAR ================== */
 #voltar img {
   width: 32px;
   height: 32px;
-  margin-left: -56px;
-  margin-top: -28px;
+  margin-left: -320px;
+  margin-top: 8px;
 }
+/* ====================================================== */
 
-.buttons {
-  margin-top: 200px;
-}
-
+/* ======================== TÍTULO ==================== */
 h1{
-position: absolute;
-width: 9px;
-height: 40px;
-left: 130px;
-top: -17px;
-font-family: Comfortaa;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 40px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.015em;
-color: #000000;
-}
-
-.row{
+  margin-right: 10px;
+  color: #28386b;
   text-align: center;
-  padding: 10px;
+  margin-top: 2%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+/* ======================================================= */ 
+
+
+/* ======================= BOTÕES ======================= */
+
+.col-xs-12{
+ text-align : center;
+ padding: 10px;
 }
 
-/*BOTÕES--------------------------------------------*/
-.ButtonBranco {
+.btnClaro{
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#badaf3;
 	border-radius:14px;
 	border:2px solid #28386b;
-	display: block;
+	display:inline-block;
 	cursor:pointer;
 	color:#28386b;
 	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:15px 50px;
+	padding:8px 55px;
   text-transform: uppercase;
 }
-.ButtonBranco:active {
+.btnClaro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonBranco:link{
+.btnClaro:link{
   text-decoration:none;
 }
 
-.ButtonPreto {
+.btnEscuro {
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
-	display:block;
+	display:inline-block;
 	cursor:pointer;
 	color:#badaf3;
 	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:16px 40px;
+	padding:11px 45px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-.ButtonPreto:hover {
-  color: #badaf3;
+.btnEscuro:hover{
+  color:#badaf3;
 }
-a.ButtonPreto:link{
+.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
-
-        
+/* ====================================================== */

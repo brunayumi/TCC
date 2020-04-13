@@ -1,0 +1,98 @@
+/* ======================== CORPO ==================== */
+body {
+  background-color:white;
+}
+/* ===================================================== */
+
+/* ======================== BOTÃO VOLTAR ==================== */
+#voltar img {
+  width: 32px;
+  height: 32px;
+  margin-left: -20px;
+  margin-top: 5px;
+}
+/* ===================================================== */
+
+/* ======================== TÍTULO ==================== */
+h1{
+  margin-right: 10px;
+  color: black;
+  text-align: center;
+  margin-top: -10%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+/* ===================================================== */
+
+/* ======================== SUBTÍTULO ==================== */
+h2 {
+margin-top: -16px;
+font-family: Comfortaa;
+font-size: 24px;
+text-align: center;
+letter-spacing: -0.015em;
+color: #000000; 
+text-transform: uppercase;
+}
+/* ===================================================== */
+
+/* ============================ BOTÕES ========================= */
+.btnClaro {
+  margin-left: 110px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:inline-block;
+	color: #28386b;
+	font-family: Comfortaa;
+	font-size:10px;
+	font-weight:bold;
+	padding:9px 20px;
+  text-transform: uppercase;
+}
+.btnClaro:active {
+  box-shadow: none;
+	position:relative;
+}
+a.btnClaro:link{
+  text-decoration:none;
+}
+
+.btnEscuro {
+  margin-top: 10px;
+  margin-left: 110px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#28386b;
+	border-radius:14px;
+	border:2px solid #badaf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#badaf3;
+	font-family:Comfortaa;
+	font-size:10px;
+	font-weight:bold;
+	padding:11px 36px;
+  text-transform: uppercase;
+}
+.btnEscuro:active {
+  box-shadow: none;
+	position:relative;
+}
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
+  text-decoration:none;
+}
+/* ===================================================== */
+
+        
+        
+
+        
+
+
+
+

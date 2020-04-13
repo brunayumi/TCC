@@ -1,29 +1,13 @@
+/* ======================== CORPO ==================== */
 body {
-  padding: 25px;
   background-color: white;
 }
+/* ===================================================== */
 
+/* ======================== LOGO DO APP ==================== */
 img {
   margin-top: 10px;
   margin-left: -12px;
-}
-
-h1{
-position: absolute;
-width: 9px;
-height: 40px;
-left: 150px;
-top: 367px;
-font-family: Comfortaa;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 40px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.015em;
-color: #000000;
 }
 
 .slide-in-top {
@@ -55,59 +39,79 @@ color: #000000;
     opacity: 1;
   }
 }
+/* ===================================================== */
 
-.row{
-text-align : center;
-margin-top: 50%;
+/* ======================== TÍTULO ==================== */
+h1{
+position: absolute;
+width: 9px;
+height: 40px;
+left: 150px;
+top: -30px;
+font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.015em;
+color: #000000;
+}
+/* ====================================================== */
+
+/* ======================= BOTÕES ======================= */
+.col-xs-6{
+ text-align : center;
+ margin-top: 30%;
 }
 
-/*BOTÕES--------------------------------------------*/
-.ButtonBranco {
+.btnClaro{
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#badaf3;
 	border-radius:14px;
 	border:2px solid #28386b;
 	display:inline-block;
-	color: #28386b;
-	font-family: Comfortaa;
+	cursor:pointer;
+	color:#28386b;
+	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:14px 40px;
+	padding:10px 36px;
   text-transform: uppercase;
 }
-.ButtonBranco:active {
+.btnClaro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonBranco:link{
+.btnClaro:link{
   text-decoration:none;
 }
 
-.ButtonPreto {
+.btnEscuro {
+  margin-top: -1px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
 	display:inline-block;
-	color: #badaf3;
-	font-family:Confortaa;
+	cursor:pointer;
+	color:#badaf3;
+	font-family:Comfortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:15px 30px;
+	padding: 11px 25px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-
-.ButtonPreto:hover {
-  color: #badaf3;
+.btnEscuro:hover{
+  color:#badaf3;
 }
-
-a.ButtonPreto:link{
+.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
-
-        
+/* ====================================================== */

@@ -1,95 +1,95 @@
+/* ======================== CORPO ==================== */
 body {
-  padding: 20px;
   background-color:white;
 }
+/* ===================================================== */
 
-.imagem {
-  margin-left: -30px;
-  margin-top: px;
-  width: 60px;
-}
-
+/* ======================== BOTÃO VOLTAR ==================== */
 #voltar img {
   width: 32px;
   height: 32px;
-  margin-left: -56px;
-  margin-top: -28px;
+  margin-left: -20px;
+  margin-top: 5px;
 }
+/* ===================================================== */
 
-
+/* ======================== TÍTULO ==================== */
 h1{
-  margin-left: -100px;
+  margin-right: 10px;
   color: black;
   text-align: center;
-  margin-top: -4%;
-  font-size: 38px;
+  margin-top: -10%;
+  font-size: 50px;
   font-family: Comfortaa;
   letter-spacing: -0.015em;
 }
+/* ===================================================== */
 
-h2{
-  color: black;
-  text-align: center;
-  margin-top: 2%;
-  font-size: 30px;
-  font-family: Comfortaa;
-  letter-spacing: -0.015em;
+/* ======================== SUBTÍTULO ==================== */
+h2 {
+margin-top: -16px;
+font-family: Comfortaa;
+font-size: 24px;
+text-align: center;
+letter-spacing: -0.015em;
+color: #000000; 
+text-transform: uppercase;
 }
+/* ===================================================== */
 
-
-.buttons {
-  margin-top: 10px;
-}
-
-.row{
-  text-align: center;
-  margin-top: 10px;
-}
-
-/*BOTÕES--------------------------------------------*/
-.ButtonBranco {
+/* ============================ BOTÕES ========================= */
+.btnClaro {
+  margin-left: 120px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#badaf3;
 	border-radius:14px;
 	border:2px solid #28386b;
-	display:block;
+	display:inline-block;
 	color: #28386b;
 	font-family: Comfortaa;
-	font-size:15px;
+	font-size:10px;
 	font-weight:bold;
-	padding:14px 40px;
+	padding:9px 20px;
   text-transform: uppercase;
 }
-.ButtonBranco:active {
+.btnClaro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonBranco:link{
+a.btnClaro:link{
   text-decoration:none;
 }
 
-.ButtonPreto {
+.btnEscuro {
+  margin-top: 10px;
+  margin-left: 120px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
-	display:block;
+	display:inline-block;
 	cursor:pointer;
 	color:#badaf3;
 	font-family:Comfortaa;
-	font-size:15px;
+	font-size:10px;
 	font-weight:bold;
-	padding:15px 30px;
+	padding:11px 20px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonPreto:link{
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
+/* ===================================================== */
+
+        
+        
 
         
 
