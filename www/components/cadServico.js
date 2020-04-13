@@ -1,5 +1,3 @@
-
-
 $(document).on("click","#ButtonPreto",function(){
 
     var parametros={

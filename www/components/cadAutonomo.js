@@ -1,5 +1,3 @@
-
-
 $(document).on("click","#ButtonPreto",function(){
 
     var parametros={
@@ -29,5 +27,10 @@ $(document).on("click","#ButtonPreto",function(){
  })
 });
 
+$(document).on("click","#ButtonPreto",function(){
+   var senhaAut
+   var confsenhaAut
 
-
+    if (senhaAut != confsenhaAut) 
+    alert("SENHAS DIFERENTES!\\nFAVOR DIGITAR SENHAS IGUAIS");
+});

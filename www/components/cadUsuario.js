@@ -28,6 +28,15 @@ $(document).on("click","#ButtonBranco",function(){
 });
 
 
+$(document).on("click","#ButtonPreto",function(){
+   var senhaUsu
+   var confsenhaUsu
+
+    if (senhaUsu != confsenhaUsu) 
+    alert("SENHAS DIFERENTES!\\nFAVOR DIGITAR SENHAS IGUAIS");
+});
+
+
 
 
 
