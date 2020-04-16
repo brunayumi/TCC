@@ -1,74 +1,259 @@
-body {
-  padding: 25px;
-  background-color: white;
+/* ======================== CORPO ==================== */
+*{
+    margin: 0;
+    padding: 0;
 }
+html,body{
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    background-color: white;
+}
+.content{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 4px;
+}
+/* ===================================================== */
 
-h1{
+/* ================== BOOT CSS ========================= */
+.clear{clear: both;}
+.center{padding: 0 2%; margin: 0 auto;}
+
+.w100{
+    width: 100%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* ===================================================== */
+
+/* ======================== INPUTS ==================== */
+  :focus {
+    outline: none;
+  }
+  
+  .content {
+    width: 300px;
+    position: relative;
+  }
+  
+  .input {
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid #929fba;
+  }
+  
+  .input ~ .border {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+  }
+  
+  .input:focus ~ .border {
+    width: 100%;
+    transition: 0.5s;
+  }
+
+.border {
+      border: 1px solid #28386b!important;
+  }
+ /* =================================================== */ 
+
+/* ======================== SUBTÍTULO ==================== */
+h5 {
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #28386b;
   text-align: center;
-  color: black;
   margin-top: 2%;
-  margin-left: 80px;
-  font-size: 35px;
-  font-family:Comfortaa;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 40px;
-  display: flex;
-  align-items: center;
+  font-size: 15px;
+  font-family: Comfortaa;
   letter-spacing: -0.015em;
 }
+/* ===================================================== */
 
-.row{
+/* ======================== TÍTULO ==================== */
+h1{
+  margin-right: 20px;
+  color: #28386b;
   text-align: center;
-  margin-top: 80%;
+  margin-top: 2%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
 }
+/* ===================================================== */
 
-/*BOTÕES--------------------------------------------*/
-.ButtonBranco {
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-	background-color:#badaf3;
-	border-radius:14px;
-	border:2px solid #28386b;
-	display:inline-block;
-	cursor:pointer;
-	color:#28386b;
-	font-family:Comfortaa;
-	font-size:15px;
-	font-weight:bold;
-	padding:14px 40px;
-  text-transform: uppercase;
+/* ============== IMAGEM DO PERFIL  ==================== */
+.circleusu {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 70px;
+  height:70px;
+  margin-top: 10%;
+  margin-left: 34%;
+  overflow: hidden;
+  position: relative;
 }
-.ButtonBranco:active {
-  box-shadow: none;
-	position:relative;
+.circleusu img {
+  position: center;
+  bottom: 0;
+   width: 100px;
+  height:100px;
 }
-a.ButtonBranco:link{
-  text-decoration:none;
+.perfil {
+  background-color: #aaa;
+  border-radius: 50%;
+  width: 100px;
+  height:100px;
+  margin-top: 1%;
+  margin-left: 34%;
+  overflow: hidden;
+  position: relative;
 }
+.perfil img {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+}
+/* ===================================================== */
 
-.ButtonPreto {
+/* ======================== BOTÕES ==================== */
+
+.btnEscuro {
+  text-align: center;
+  margin-top: 2%;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
-	display:inline-block;
-	cursor:pointer;
-	color:#badaf3;
-	font-family:Comfortaa;
+	display:block;
+	color: #badaf3;
+	font-family:Confortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:15px 45px;
+	padding:7.5px 2px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonPreto:link{
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
 
-        
+.btnClaro {
+  text-align: center;
+  margin-top: 2%;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:block;
+	color: #28386b;
+	font-family:Confortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 2px;
+  text-transform: uppercase;
+}
+.btnEscuro:active {
+  box-shadow: none;
+	position:relative;
+}
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
+  text-decoration:none;
+}
+/* ===================================================== */
 
+/* ===================== MENU SUPERIOR ================= */
+header{
+    position: relative;
+    left: 300px;    
+    padding: 10px 0;
+    height: 55px;
+    background-color: #badaf3;
+    width: calc(100% - 300px);
+}
+/* ===================================================== */
 
+/* ===================== MENU LATERAL ================= */
+div.menu-wrapper{width: 300px;}
+div.menu{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background: #badaf3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    padding: 10px;
+}
+.menu-btn{
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+}
+#user{
+  font-size: 80px;
+  margin-top: 5%;
+  margin-left: 28%;
+}
+#btn{
+  background-color: transparent;
+  border-color: transparent;
+  color: #28386b;
+}
+#btn:link{
+  text-decoration:none;
+}
+
+#hr{
+  border-color: #28386b;
+}
+/* ===================================================== */
+
+/* ========= SE A TELA FOR MENOR QUE 768 =============== */
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        left: 0;
+    }
+    header{
+        left: 0;
+        width: 100%;
+    }
+}
+/* ===================================================== */
+
+/* ========= SE A TELA FOR MENOR QUE 400 =============== */
+@media screen and (max-width: 400px){
+    div.menu-wrapper{
+        width: 180px;
+    }
+    .menu{
+        width: 200px;
+    }
+}
+/* ===================================================== */

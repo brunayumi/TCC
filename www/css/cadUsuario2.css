@@ -3,7 +3,7 @@
   transform: translate(-50%,-50%);
   margin-left: 164px;
   position: absolute;
-  top: 48%;
+  top: 54%;
   width: 23rem;
   padding: 14px;
   box-sizing: border-box;
@@ -77,7 +77,7 @@ h1{
 .btnEscuro {
   width: 120px;
   text-align: center;
-  margin-top: -15%;
+  margin-top: 11%;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
@@ -105,7 +105,7 @@ a.btnEscuro:link{
   margin-left: 66px;
   width: 120px;
   text-align: center;
-  margin-top: -15%;
+  margin-top: 12%;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#badaf3;
 	border-radius:14px;
@@ -129,6 +129,5 @@ a.btnClaro:link{
   text-decoration:none;
 }
 /* ===================================================== */
-
 
 
