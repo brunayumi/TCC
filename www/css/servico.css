@@ -1,71 +1,86 @@
-body {
-  padding: 25px;
-  background-color: white;
+/* ======================== CORPO ==================== */
+*{
+    margin: 0;
+    padding: 0;
 }
-
-#voltar img {
-  width: 32px;
-  height: 32px;
-  margin-left: -56px;
-  margin-top: -28px;
+html,body{
+    height: 100%;
 }
-
-h1{
-position: absolute;
-width: 9px;
-height: 40px;
-left: 100px;
-margin-top: 30px;
-font-family: Comfortaa;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 40px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.015em;
-color: #000000;
+body{
+    overflow-x: hidden;
+    background-color: white;
 }
-
-.buttons {
-  margin-top: 25%;
+.content{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 4px;
 }
+/* ===================================================== */
 
-.row{
-text-align : center;
-margin-top: 2%;
+/* ================== BOOT CSS ========================= */
+.clear{clear: both;}
+.center{padding: 0 2%; margin: 0 auto;}
+
+.w100{
+    width: 100%;
 }
-
-.imagem {
-  width: 50px;
-  height: 50px;
-  margin-left: 500px;
+.left{
+    float: left;
 }
+.right{
+    float: right;
+}
+/* ===================================================== */
 
-/*BOTÕES--------------------------------------------*/
-.ButtonBranco {
-  box-shadow: 0 4px rgba(0,0,0,0.2);
-	background-color:#badaf3;
-	border-radius:14px;
-	border:2px solid #28386b;
-	display:block;
-	color: #28386b;
-	font-family: Comfortaa;
-	font-size:15px;
-	font-weight:bold;
-	padding:14px 40px;
+/* ======================== INPUTS ==================== */
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  border-radius: 14px;
+  border: solid 1px;
+  width: 100%;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  height: 2em;
+  border-top: 2px solid #badaf3;
+  border-bottom: 2px solid #badaf3;
+  border-left: 2px solid #badaf3;
+  border-right: 2px solid #badaf3;
+}
+ /* =================================================== */ 
+
+/* ======================== SUBTÍTULO ==================== */
+h5 {
   text-transform: uppercase;
+  margin-right: 20px;
+  color: #28386b;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 15px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
 }
-.ButtonBranco:active {
-  box-shadow: none;
-	position:relative;
-}
-a.ButtonBranco:link{
-  text-decoration:none;
-}
+/* ===================================================== */
 
-.ButtonPreto {
+/* ======================== TÍTULO ==================== */
+h1{
+  margin-right: 20px;
+  color: #28386b;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
+}
+/* ===================================================== */
+/* ======================== BOTÕES ==================== */
+
+.btnEscuro {
+  text-align: center;
+  margin-top: 2%;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
@@ -75,16 +90,134 @@ a.ButtonBranco:link{
 	font-family:Confortaa;
 	font-size:15px;
 	font-weight:bold;
-	padding:15px 30px;
+	padding:7.5px 2px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonPreto:link{
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
 
-        
+.btnClaro {
+  text-align: center;
+  margin-top: 2%;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:block;
+	color: #28386b;
+	font-family:Confortaa;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 2px;
+  text-transform: uppercase;
+}
+.btnEscuro:active {
+  box-shadow: none;
+	position:relative;
+}
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
+  text-decoration:none;
+}
+/* ===================================================== */
+
+/* ================== BOOT CSS ========================= */
+.clear{clear: both;}
+.center{padding: 0 2%; margin: 0 auto;}
+
+.w100{
+    width: 100%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* ===================================================== */
+
+/* ===================== MENU SUPERIOR ================= */
+header{
+    position: relative;
+    left: 300px;    
+    padding: 10px 0;
+    height: 55px;
+    background-color: #badaf3;
+    width: calc(100% - 300px);
+}
+/* ===================================================== */
+
+/* ===================== MENU LATERAL ================= */
+div.menu-wrapper{width: 300px;}
+div.menu{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background: #badaf3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    padding: 10px;
+}
+.menu-btn{
+    float: left;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+}
+#user{
+  font-size: 80px;
+  margin-top: 5%;
+  margin-left: 28%;
+}
+#btn{
+  background-color: transparent;
+  border-color: transparent;
+  color: #28386b;
+}
+#btn:link{
+  text-decoration:none;
+}
+
+#hr{
+  border-color: #28386b;
+}
+/* ===================================================== */
+
+/* ========= SE A TELA FOR MENOR QUE 768 =============== */
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        left: 0;
+    }
+    header{
+        left: 0;
+        width: 100%;
+    }
+}
+/* ===================================================== */
+
+/* ========= SE A TELA FOR MENOR QUE 400 =============== */
+@media screen and (max-width: 400px){
+    div.menu-wrapper{
+        width: 180px;
+    }
+    .menu{
+        width: 200px;
+    }
+}
+/* ===================================================== */
