@@ -39,13 +39,13 @@
   </div>
   <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="senhaAut" type="text" placeholder="Senha" required>
+      <input class="input" id="senhaAut" type="password" placeholder="Senha" onblur="verificaSenha();" required>
       <span class="border"></span>
     </div>
   </div>
   <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="confsenhaAut" type="text" placeholder="Confirmar senha" required>
+      <input class="input" id="confsenhaAut" type="password" placeholder="Confirmar senha" onblur="verificaSenha();" required>
       <span class="border"></span>
     </div>
   </div>
@@ -57,7 +57,7 @@
 					<button class="btn btnEscuro btn-block" onclick="cadAutonomo2()" id="btnVoltar">Cancelar</button>
 				</div>
 				<div class="col-xs-4">
-					<button class="btn btnClaro btn-block"  onclick="inicioA()" id="btnFinalizar">Finalizar</button>
+					<button class="btn btnClaro btn-block" onclick="inicioA()" id="btnFinalizar">Finalizar</button>
 				</div>
 			</div>
       </div>

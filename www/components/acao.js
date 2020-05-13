@@ -39,7 +39,7 @@ function registrar(){
 function preencherServico() {
   $.ajax({
     type: "post", //como enviar
-    url: "https://adatcc.000webhostapp.com/.php",//para onde enviar
+    url: "https://adatcc.000webhostapp.com/perfilAutonomo.php",//para onde enviar
     data: 'id=' + localStorage.getItem('cdAutonomo'),
     dataType: 'json',//o que enviar
     //se der certo
@@ -54,9 +54,9 @@ function preencherServico() {
       $("#enderecoAut").val(data.perfil.endereco);
       $("#numeroAut").val(data.perfil.numero);
       $("#bairroAut").val(data.perfil.bairro);
-      $("#fotoAut").attr('src', 'https://adatcc.000webhostapp.com/' + data.perfil.foto);
-      $("#img").attr('src', 'https://adatcc.000webhostapp.com/' + data.perfil.foto);
-      $("#perfil").attr('src', 'https://adatcc.000webhostapp.com/' + data.perfil.foto);
+      $("#fotoAut").attr('src', 'https://adatcc.000webhostapp.com/perfilAutonomo.php' + data.perfil.foto);
+      $("#img").attr('src', 'https://adatcc.000webhostapp.com/perfilAutonomo.php' + data.perfil.foto);
+      $("#perfil").attr('src', 'https://adatcc.000webhostapp.com/perfilAutonomo.php' + data.perfil.foto);
 
     },
     //se der errado
@@ -114,7 +114,7 @@ $(document).on('click', '#btnSalvar', function () {
   };
   $.ajax({
     type: "post", //como enviar
-    url: "https://adatcc.000webhostapp.com/.php", //para onde enviar
+    url: "https://adatcc.000webhostapp.com/perfilAutonomo.php", //para onde enviar
     data: parametros, //o que enviar
     //se der certo
     success: function (data) {
@@ -140,7 +140,7 @@ $(document).on('click', '#btnVoltar', function () {
 function preencherServico() {
   $.ajax({
     type: "post", //como enviar
-    url: "https://adatcc.000webhostapp.com/.php",//para onde enviar
+    url: "https://adatcc.000webhostapp.com/servicos.php",//para onde enviar
     data: 'id=' + localStorage.getItem('cdServico'),
     dataType: 'json',//o que enviar
     //se der certo
@@ -203,7 +203,7 @@ $(document).on('click', '#btnSalvar', function () {
   };
   $.ajax({
     type: "post", //como enviar
-    url: "https://adatcc.000webhostapp.com/.php", //para onde enviar
+    url: "https://adatcc.000webhostapp.com/servicos.php", //para onde enviar
     data: parametros, //o que enviar
     //se der certo
     success: function (data) {
@@ -229,13 +229,13 @@ function visualizarServicos() {
 
   $.ajax({
     type: "POST", //como enviar
-    url: "https://adatcc.000webhostapp.com/.php",//para onde enviar
+    url: "https://adatcc.000webhostapp.com/servicos.php",//para onde enviar
     dataType: 'json',//o que enviar
     //se der certo
     success: function (data) {
       var itemlista = "";
       $.each(data.autonomo, function (i, dados) {
-        itemlista += '<labeL>Nome:</labeL> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5; font-weight: bold;  background-color: #e7e9eb;" disabled value="' + dados.nome + '"> </div> <div class="col-xs-12"> <labeL>Descrição:</labeL> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5; font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.descricao + '"> </div> <div class="col-xs-12"> <labeL>Orçamento:</labeL> <br> <input type="number" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.orcamento + '"> </div> <div class="col-xs-12"> <labeL>Forma de pagamento:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.pagamento + '"> </div> </div> <br><div class="row"> <div class="col-xs-4"> <img src="img/joiaa.png" onclick="var codigo = ' + dados.realizados + '"> </div> <div class="col-xs-12"> <labeL>Serviços realizados anteriormente:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.indicacoes + '"> </div> <div class="col-xs-12"> <labeL>Indicações de clientes:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="'+ dados.tempo + '"> </div> <div class="col-xs-12"> <labeL>Tempo para executar o serviço:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.ramo + '"> </div> <div class="col-xs-12"> <labeL>Quanto tempo atua no ramo:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="';
+        itemlista += '<labeL>Nome:</labeL> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5; font-weight: bold;  background-color: #e7e9eb;" disabled value="' + dados.nome + '"> </div> <div class="col-xs-12"> <labeL>Descrição:</labeL> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5; font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.descricao + '"> </div> <div class="col-xs-12"> <labeL>Orçamento:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.orcamento + '"> </div> <div class="col-xs-12"> <labeL>Forma de pagamento:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.pagamento +  '"> </div> <div class="col-xs-12"> <labeL>Formas de pagamento:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="'+ dados.realizados + '"> </div> <div class="col-xs-12"> <labeL>Serviços realizados anteriormente:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.indicacoes + '"> </div> <div class="col-xs-12"> <labeL>Indicações de clientes:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="'+ dados.tempo + '"> </div> <div class="col-xs-12"> <labeL>Tempo para executar o serviço:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="' + dados.ramo + '"> </div> <div class="col-xs-12"> <labeL>Quanto tempo atua no ramo:</labeL> <br> <input type="text" style="border: none;border-bottom: solid 3px #0e97a5;  font-weight: bold; background-color: #e7e9eb;" disabled value="';
       });
 
       $("#servicos").html(itemlista);
