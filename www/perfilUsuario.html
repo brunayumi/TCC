@@ -4,46 +4,212 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-   <script src="components/jquery-3.4.1.min.js"></script>
-  <script src="components/codigo.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
+  <script src="components/main.js"></script>
+	<script type="components/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/be184030a6.js"></script>
 
   <link rel="stylesheet" href="components/Bootstrap/loader.css">
   <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/perfilUsuario.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/perfilAutonomo.css">
+  <script>
+  		$(document).ready(function(){
+        preencherPerfilUsu();
+      });
+	</script>
 </head>
 <body>
-   <div class="col-xs-2">
-    <div class="form-group">
-        <a class="btn btn-block" href="inicioU.html"  id="voltar" role="button"><img src="btn_voltar.png"></a>
-       </div>
+<!------------------------------------------- MENU LATERAL ---------------------------------------------->
+  	<div class="menu">
+		<div class="menu-wrapper">
+
+			<div class="row">
+				<div class="circleusu">
+					<img id="perfil">
+				</div>
+			</div>
+   	<hr id="hr">
+
+      <div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-info btn-block" onclick="inicioU()" id="btn"> <img src="inicio.png"/> Página inicial </button>
+					<hr id="hr">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-info btn-block" id="btn" onclick="servicosU()"> <img src="servicos.png"/> Serviços </button>
+					<hr id="hr">
+				</div>
+			</div>
+
+      <div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-info btn-block" onclick="avaliacoesU()" id="btn"> <img src="avaliacao.png"/> Avaliações </button>
+					<hr id="hr">
+				</div>
+			</div>
+
+      <div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-info btn-block" onclick="recomendacoesU()" id="btn"> <img src="recomendacao.png"/>  Recomendações </button>
+					<hr id="hr">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="#" data-toggle="modal" data-target="#myModal"><button class="btn btn-info btn-block" id="btn">  <img src="sair.png"/> Sair </button></a>
+					<hr id="hr">
+				</div>
+			</div>
+		</div>
+	</div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------- MENU SUPERIOR  -------------------------------------------->
+  	<header>
+		<div class="center">
+			<div class="menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</header>
+<!----------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------- CORPO ----------------------------------------------->
+  		<div class="content">
+		<div class="box-content w100 left">
+
+			<h1>Perfil</h1>
+			<br>
+			<div class="row">
+				<div class="circle">
+					<img id="perfil">
+				</div>
+			</div>
+<form action="autonomo" method="post">
+  <div class="row">
+    <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="loginUsu" type="text" placeholder="Login" readonly>
+      <span class="border"></span>
     </div>
-    <hr>
-  <img class="imagem" src="perfil.png">
-  <h1>Usuário</h1>
-  <div class="row">
-  <h2>Sobre:</h2>
-  <input type="textarea" placeholder="" id="textarea" readonly />
   </div>
-  <div class="buttons">
-  <div class="row">
-  <a href="" class="ButtonBranco">Alterar Perfil</a>
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="senhaUsu" type="text" placeholder="Senha" readonly>
+      <span class="border"></span>
+    </div>
   </div>
-  <div class="row">
-  <a href="servicosU.html" class="ButtonBranco">Serviços</a>
+ <h5><b>Dados pessoais:</b></h5>
+    <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="nomeUsu" type="text" placeholder="Nome" readonly>
+      <span class="border"></span>
+    </div>
   </div>
-  <div class="row">
-  <a href="chat.html" class="ButtonPreto">Sair</a>
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="sobrenomeUsu" type="text" placeholder="Sobrenome" readonly>
+      <span class="border"></span>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="CPFUsu" type="number" placeholder="CPF" readonly>
+      <span class="border"></span>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="telefoneUsu" type="number" placeholder="Telefone" readonly>
+      <span class="border"></span>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="emailUsu" type="text" placeholder="E-mail" readonly>
+      <span class="border"></span>
+    </div>
+ </div>
+  <h5><b>Endereço:</b></h5>
+ <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="enderecoUsu" type="text" placeholder="Rua" readonly>
+      <span class="border"></span>
+    </div>
   </div>
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="referenciaUsu" type="text" placeholder="Ponto de referência" readonly>
+      <span class="border"></span>
+    </div>
   </div>
-  <nav id="menu">
-    <ul>
-        <li><a href="pesquisar.html" id="pesquisar"><img src="pesquisar.png"></a></li>
-        <li><a href="chatU.html" id="chat"><img src="chat.png"></a></li>
-        <li><a href="inicioU.html" id="inicio"><img src="inicio.png"></a></li>
-        <li><a href="notificacoes.html" id="notificacao"><img src="notificacao.png"></a></li>
-        <li><a href="perfilUsuario.html" id="menu"><img src="perfil_menu.png"></a></li>
-    </ul>
-    </nav>
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="numeroUsu" type="text" placeholder="Nº" readonly>
+      <span class="border"></span>
+    </div>
+  </div>
+    <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="bairroUsu" type="text" placeholder="Bairro" readonly>
+      <span class="border"></span>
+    </div>
+  </div>
+</div>
+</form>
+</div>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<button class="btn btnClaro btn-block" id="btnEditar">Editar</button>
+				</div>
+
+				<div class="col-xs-6">
+					<button class="btn btnClaro btn-block" id="btnSalvar">Salvar</button>
+				</div>
+        </div>
+        
+        <div class="row">
+				<div class="col-xs-6">
+					<button class="btn btnEscuro btn-block" id="btnVoltar">Cancelar</button>
+				</div>
+
+        	<div class="col-xs-6">
+					<button class="btn btnEscuro btn-block" id="btnExcluir">Excluir</button>
+				</div>
+			</div>
 </body>
+<!----------------------------------------------------------------------------------------------------->
+
+<!----------------------------------- MODAL AO APERTAR O BOTÃO DE SAIR --------------------------------->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+        </button>
+						<h4 class="modal-title" id="myModalLabel">Sair da conta</h4>
+					</div>
+					<div class="modal-body">
+						Tem certeza que gostaria de sair?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+						<a class="btn btn-primary" href="index.html">Sim</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!----------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------- BOOT CSS ------------------------------------------------>
+ 	<div class="clear"></div>
+<!-----------------------------------------------------------------------------------------------------> 
+
 </html>
