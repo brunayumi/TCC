@@ -1,9 +1,9 @@
 /* =========================== VERIFICA CPF ================================ */
-function VerificaCPF() {
+function verificaCPF() {
 
   var inputCPF = document.getElementById('cpfAut');
 
-  if (vercpf(inputCPF.value)) {
+  if (verificaCPF(inputCPF.value)) {
     inputCPF.style.border = "3px #red solid";
   }
   else {
@@ -16,7 +16,7 @@ function VerificaCPF() {
   }
 }
 
-function vercpf(cpf) {
+function verificaCPF(cpf) {
 
   if (cpf.length != 11 || cpf == "00000000000" || cpf == "11111111111" || cpf == "22222222222" || cpf == "33333333333" || cpf == "44444444444" || cpf == "55555555555" || cpf == "66666666666" || cpf == "77777777777" || cpf == "88888888888" || cpf == "99999999999")
 
@@ -86,7 +86,7 @@ $(document).on('click', '#btnEntrar', function () {
 /* ============================================================================ */
 
 /* =========================== VERIFICA SENHA ================================= */
- function VerificaSenha() {
+ function verificaSenha() {
    var senha = document.getElementById('senhaAut').value;
    var confsenha = document.getElementById('confsenhaAut').value;
 
