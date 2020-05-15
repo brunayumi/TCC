@@ -305,7 +305,7 @@ function preencherPerfilUsu() {
       $("#referenciaUsu").val(data.perfil.referencia)
       $("#numeroUsu").val(data.perfil.numero);
       $("#bairroUsu").val(data.perfil.bairro);
-      $("#fotoAut").attr('src', 'https://adatcc.000webhostapp.com/perfilUsuario.php' + data.perfil.foto);
+      $("#fotoUsu").attr('src', 'https://adatcc.000webhostapp.com/perfilUsuario.php' + data.perfil.foto);
       $("#img").attr('src', 'https://adatcc.000webhostapp.com/perfilUsuario.php' + data.perfil.foto);
       $("#perfil").attr('src', 'https://adatcc.000webhostapp.com/perfilUsuario.php' + data.perfil.foto);
 
