@@ -4,27 +4,188 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-   <script src="components/jquery-3.4.1.min.js"></script>
-  <script src="components/codigo.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
+  <script src="components/main.js"></script>
+	<script type="components/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/be184030a6.js"></script>
 
   <link rel="stylesheet" href="components/Bootstrap/loader.css">
   <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/servico.css">
+
+   <script>
+    $(document).ready(function(){
+        preencherServicoUsu();
+   });
+  </script>
 </head>
+
 <body>
-  <div class="col-xs-2">
-    <div class="form-group">
-        <a class="btn btn-block" href="perfilUsuario.html"  id="voltar" role="button"><img src="btn_voltar.png"></a>
-       </div>
+<!------------------------------------------- MENU LATERAL ---------------------------------------------->
+  	<div class="menu">
+		<div class="menu-wrapper">
+
+			<div class="row">
+				<div class="circleusu">
+					<img id="perfil">
+				</div>
+			</div>
+   	<hr id="hr">
+
+      <div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-info btn-block" onclick="inicioU()" id="btn"> <img src="inicio.png"/> Página inicial </button>
+					<hr id="hr">
+				</div>
+			</div>
+
+      	<div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-info btn-block" id="btn" onclick="visualizarServicosU()"> <img src="visualizar.png"/> Visualizar </button>
+					<hr id="hr">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-info btn-block" id="btn" onclick="trajeto()"> <img src="mapa.png"/> Trajeto </button>
+					<hr id="hr">
+				</div>
+			</div>
+
+      <div class="row">
+				<div class="col-xs-12">
+					<button class="btn btn-info btn-block" onclick="historicoServicoU()" id="btn"> <img src="historico.png"/> Histórico </button>
+					<hr id="hr">
+				</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="#" data-toggle="modal" data-target="#myModal"><button class="btn btn-info btn-block" id="btn">  <img src="sair.png"/> Sair </button></a>
+					<hr id="hr">
+				</div>
+			</div>
+		</div>
+	</div>
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------- MENU SUPERIOR  -------------------------------------------->
+  	<header>
+		<div class="center">
+			<div class="menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</header>
+<!----------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------- CORPO ----------------------------------------------->
+  		<div class="content">
+		<div class="box-content w100 left">
+
+			<h1>Serviço</h1>
+			<br>
+<form action="servico" method="post">
+  <div class="row">
+    <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="nomeServico" type="text" placeholder="Nome" readonly>
+      <span class="border"></span>
     </div>
-  <h1>Serviços</h1>
-    <hr>
-  <div class="buttons">
- <div class="row">
-   <a href="servicosSolicitados.html" class="ButtonBranco">Visualizar</a>
- </div>
   </div>
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="descrServico" type="text" placeholder="Descrição" readonly>
+      <span class="border"></span>
+    </div>
+  </div>
+    <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="orcamentoServico" type="number" placeholder="Orçamento" readonly>
+      <span class="border"></span>
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="pagamentoServico" type="text" placeholder="Forma de pagamento" readonly>
+      <span class="border"></span>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="servRealizados" type="text" placeholder="Serviços realizados anteriormente" readonly>
+      <span class="border"></span>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="indicaServico" type="text" placeholder="Indicações de clientes" readonly>
+      <span class="border"></span>
+    </div>
+</div>
+<div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="tempoServico" type="text" placeholder="Tempo para executar o serviço" readonly>
+      <span class="border"></span>
+    </div>
+ </div>
+ <div class="col-xs-12">
+    <div class="content mt-5 mx-auto">
+      <input class="input" id="tempoRamo" type="text" placeholder="Quanto tempo atua no ramo" readonly>
+      <span class="border"></span>
+    </div>
+  </div>
+</form>
+</div>
+        
+        <div class="row">
+				<div class="col-xs-6">
+					<button class="btn btnEscuro btn-block" id="btnVoltar">Cancelar</button>
+				</div>
+
+        	<div class="col-xs-6">
+					<button class="btn btnEscuro btn-block" id="btnExcluir">Excluir Solicitação</button>
+				</div>
 
 </body>
+<!----------------------------------------------------------------------------------------------------->
+
+<!----------------------------------- MODAL AO APERTAR O BOTÃO DE SAIR --------------------------------->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+        </button>
+						<h4 class="modal-title" id="myModalLabel">Sair da conta</h4>
+					</div>
+					<div class="modal-body">
+						Tem certeza que gostaria de sair?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+						<a class="btn btn-primary" href="index.html">Sim</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!----------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------- BOOT CSS ------------------------------------------------>
+ 	<div class="clear"></div>
+<!-----------------------------------------------------------------------------------------------------> 
+
 </html>
+
+<!-- visualizar serviço solicitado
+  <div class="content">
+		<div class="box-content w100 left">
+
+			<h1>Meus serviços:</h1>
+			<br>
+
+       <table id="servicos">
+            </table>  
+    </div> -->

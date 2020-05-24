@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="components/Bootstrap/loader.css">
   <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="css/fotoUsuario.css">
+  <link rel="stylesheet" href="css/fotoAutonomo.css">
 </head>
 <body>
   <!----------------------------------------------- CORPO ----------------------------------------------->
@@ -39,13 +39,13 @@
   </div>
   <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="senhaUsu" type="password" placeholder="Senha" onblur="verificaSenha();" required>
+      <input class="input" id="senhaUsu" type="password" placeholder="Senha" onblur="verificaSenha()" required>
       <span class="border"></span>
     </div>
   </div>
   <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="confsenhaUsu" type="password" placeholder="Confirmar senha" onblur="verificaSenha();" required>
+      <input class="input" id="confsenhaUsu" type="password" placeholder="Confirmar senha" onblur="verificaSenha()" required>
       <span class="border"></span>
     </div>
   </div>
@@ -58,8 +58,6 @@
 				</div>
 				<div class="col-xs-4">
 					<button class="btn btnClaro btn-block" onclick="inicioU()" id="btnFinalizar">Finalizar</button>
-				</div>
-			</div>
       </div>
     </div>
 </body>

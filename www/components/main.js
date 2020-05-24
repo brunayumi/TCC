@@ -61,7 +61,7 @@ $(function(){
 // $(document).on("click","#btnExcluir",function(){
 //     $.ajax({
 //         type:"POST", //como enviar
-//         url:"https://onservicos.000webhostapp.com/excluirServico.php",//para onde enviar
+//         url:"https://adatcc.000webhostapp.com/excluirServico.php",//para onde enviar
 //         data:"id="+$("#codigo").val(),
 //         //se der certo
 //         success: function(data){
@@ -75,10 +75,3 @@ $(function(){
 //     }); 
 // });
 
-//Alterar Senha
-$(document).on("click", "#alteraSenha", function(){
-
-  // $ajax({
-
-  // });
-});

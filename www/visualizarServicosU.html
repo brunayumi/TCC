@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
- <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
   <script src="components/acao.js"></script>
   <script src="components/main.js"></script>
 	<script type="components/bootstrap.min.js"></script>
@@ -13,7 +13,13 @@
   <link rel="stylesheet" href="components/Bootstrap/loader.css">
   <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/servico.css">
+  
+   <script>
+    $(document).ready(function(){
+        visualizarServicosUsu();
+   });
+  </script>
 </head>
 
 <body>
@@ -26,8 +32,8 @@
 					<img id="perfil">
 				</div>
 			</div>
-		<hr id="hr">
-    
+   	<hr id="hr">
+
       <div class="row">
 				<div class="col-xs-12">
 					<button class="btn btn-info btn-block" onclick="inicioU()" id="btn"> <img src="inicio.png"/> Página inicial </button>
@@ -37,35 +43,7 @@
 
 			<div class="row">
 				<div class="col-xs-12">
-					<button class="btn btn-info btn-block" id="btn" onclick="perfilU()"> <img src="perfil_menu.png"/> Perfil</button>
-					<hr id="hr">
-				</div>
-			</div>
-
-      <div class="row">
-				<div class="col-xs-12">
-					<button class="btn btn-info btn-block" onclick="notificacoesU()" id="btn"> <img src="notificacao.png"/> Notificações</button>
-					<hr id="hr">
-				</div>
-			</div>
-      
-      <div class="row">
-				<div class="col-xs-12">
-					<button class="btn btn-info btn-block" onclick="abrirChat()" id="btn"> <img src="chat.png"/> Conversas</button>
-          <hr id="hr">
-        </div>
-      </div>
-      
-       <div class="row">
-				<div class="col-xs-12">
-					<button class="btn btn-info btn-block" onclick="pesquisar()" id="btn"> <img src="pesquisar.png"/> Pesquisar </button>
-					<hr id="hr">
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-12">
-					<a href="#" data-toggle="modal" data-target="#myModal"><button class="btn btn-info btn-block" id="btn"> <img src="sair.png"/> Sair </button></a>
+					<a href="#" data-toggle="modal" data-target="#myModal"><button class="btn btn-info btn-block" id="btn">  <img src="sair.png"/> Sair </button></a>
 					<hr id="hr">
 				</div>
 			</div>
@@ -84,26 +62,15 @@
 <!----------------------------------------------------------------------------------------------------->
 
 <!----------------------------------------------- CORPO ----------------------------------------------->
-  <div class="content">
+  		<div class="content">
 		<div class="box-content w100 left">
-    
-	<div class="row">
-      <div class="col-xs-12">
-			  <h1>Seja bem vindo!</h1>
-		  	<br>
-    </div>
-  </div>
 
-	<div class="row">
-    <div class="col-xs-12">
-       <h5><b>Selecione algum item do nosso menu.</b></h5>
-    </div>
-  </div>
- 
-  </div>
-	  </div>
+			<h1>Meus servicos solicitados:</h1>
+			<br>
 
-	
+       <table id="servicosSolicitados">
+            </table>  
+</div>
 </body>
 <!----------------------------------------------------------------------------------------------------->
 
@@ -131,5 +98,5 @@
 <!------------------------------------------- BOOT CSS ------------------------------------------------>
  	<div class="clear"></div>
 <!-----------------------------------------------------------------------------------------------------> 
-</html>
 
+</html>
