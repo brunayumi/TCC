@@ -10,7 +10,7 @@
   <script src="components/main.js"></script>
 	<script type="components/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/be184030a6.js"></script>
-  <script src="components/cadAutonomo.js"></script>
+  <script src="components/cadUsuario.js"></script>
 
   <link rel="stylesheet" href="components/Bootstrap/loader.css">
   <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
@@ -22,7 +22,7 @@
   		<div class="container">
       <h1>Agora a última etapa:</h1>
         <div class="box">
-  <form action="cadAutonomo" method="post">
+  <form action="cadUsuario method="post">
     <div class="row">
       <div class="col-xs-12">
       <div class="content mt-5 mx-auto">
@@ -33,19 +33,19 @@
   <div class="row">   
   <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="loginAut" type="text" placeholder="Login" required>
+      <input class="input" id="loginUsu" type="text" placeholder="Login" required>
       <span class="border"></span>
     </div>
   </div>
   <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="senhaAut" type="text" placeholder="Senha" required>
+      <input class="input" id="senhaUsu" type="password" placeholder="Senha" onblur="verificaSenha()" required>
       <span class="border"></span>
     </div>
   </div>
   <div class="col-xs-12">
     <div class="content mt-5 mx-auto">
-      <input class="input" id="confsenhaAut" type="text" placeholder="Confirmar senha" required>
+      <input class="input" id="confsenhaUsu" type="password" placeholder="Confirmar senha" onblur="verificaSenha()" required>
       <span class="border"></span>
     </div>
   </div>
@@ -54,12 +54,10 @@
 <br>
 		<div class="row">
 				<div class="col-xs-4">
-					<button class="btn btnEscuro btn-block" onclick="cadAutonomo2()" id="btnVoltar">Cancelar</button>
+					<button class="btn btnEscuro btn-block" onclick="cadUsuario2()" id="btnVoltar">Cancelar</button>
 				</div>
 				<div class="col-xs-4">
-					<button class="btn btnClaro btn-block"  onclick="inicioA()" id="btnFinalizar">Finalizar</button>
-				</div>
-			</div>
+					<button class="btn btnClaro btn-block" onclick="inicioU()" id="btnFinalizar">Finalizar</button>
       </div>
     </div>
 </body>

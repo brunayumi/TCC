@@ -1,56 +1,134 @@
-body {
-  padding: 20px;
-  background-color:white;
+/* ======================== CORPO ==================== */
+.box {
+  transform: translate(-50%,-50%);
+  margin-left: 164px;
+  position: absolute;
+  top: 48%;
+  width: 23rem;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 5px solid #badaf3;
+  border-radius: 15px;
 }
+/* ===================================================== */
 
-.imagem {
-  margin-left: 80px;
-  margin-top: 50px;
-}
+/* ======================== INPUTS ==================== */
+  :focus {
+    outline: none;
+  }
+  
+  .content {
+    width: 300px;
+    position: relative;
+  }
+  
+  .input {
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid #929fba;
+  }
+  
+  .input ~ .border {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+  }
+  
+  .input:focus ~ .border {
+    width: 100%;
+    transition: 0.5s;
+  }
 
-h1{
-  color: black;
+.border {
+      border: 1px solid #28386b!important;
+  }
+ /* =================================================== */ 
+
+/* ======================== SUBTÍTULO ==================== */
+h5 {
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #28386b;
   text-align: center;
-  margin-top: 5%;
-  font-size: 40px;
+  margin-top: 2%;
+  font-size: 15px;
   font-family: Comfortaa;
   letter-spacing: -0.015em;
 }
+/* ===================================================== */
 
-.btn-dark {
-  margin-left: 95px;
-  background-color: grey;
-  color:black;
-  margin-top: 20px;
-}
-
-.row{
+/* ======================== TÍTULO ==================== */
+h1{
+  margin-right: 20px;
+  color: #28386b;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 2%;
+  font-size: 50px;
+  font-family: Comfortaa;
+  letter-spacing: -0.015em;
 }
+/* ===================================================== */
 
-.ButtonPreto {
+/* ======================== BOTÕES ==================== */
+
+.btnEscuro {
+  width: 120px;
+  text-align: center;
+  margin-top: -15%;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
 	border:2px solid #badaf3;
-	display:inline-block;
-	cursor:pointer;
-	color:#badaf3;
-	font-family:Comfortaa;
-	font-size:15px;
+	display:block;
+	color: #badaf3;
+	font-family:Confortaa;
+	font-size:14px;
 	font-weight:bold;
-	padding:15px 30px;
+	padding:8px 2px;
   text-transform: uppercase;
 }
-.ButtonPreto:active {
+.btnEscuro:active {
   box-shadow: none;
 	position:relative;
 }
-a.ButtonPreto:link{
+.btnEscuro:hover {
+  color:#badaf3;
+}
+a.btnEscuro:link{
   text-decoration:none;
 }
-/*------------------------------------------------*/
 
-        
+.btnClaro {
+  margin-left: 66px;
+  width: 120px;
+  text-align: center;
+  margin-top: -15%;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+	background-color:#badaf3;
+	border-radius:14px;
+	border:2px solid #28386b;
+	display:block;
+	color: #28386b;
+	font-family:Confortaa;
+	font-size:14px;
+	font-weight:bold;
+	padding:7px 2px;
+  text-transform: uppercase;
+}
+.btnClaro:active {
+  box-shadow: none;
+	position:relative;
+}
+.btnClaro:hover {
+  color:#28386b;
+}
+a.btnClaro:link{
+  text-decoration:none;
+}
+/* ===================================================== */
+
+
 
