@@ -82,13 +82,14 @@ function preencherPerfilAut() {
       $("#loginAut").val(data.perfil.login);
       $("#senhaAut").val(data.perfil.senha);
       $("#nomeAut").val(data.perfil.nome);
-      $("#sobrenomeAut").val(data.perfil.sobrenome);
       $("#CPFAut").val(data.perfil.cpf);
       $("#telefoneAut").val(data.perfil.telefone);
       $("#emailAut").val(data.perfil.email);
       $("#enderecoAut").val(data.perfil.endereco);
       $("#numeroAut").val(data.perfil.numero);
       $("#bairroAut").val(data.perfil.bairro);
+      $("#cidadeAut").val(data.perfil.cidade);
+      $("#estadoAut").val(data.perfil.estado);
       $("#fotoAut").attr('src', 'https://adatcc.000webhostapp.com/perfilAutonomo.php' + data.perfil.foto);
       $("#img").attr('src', 'https://adatcc.000webhostapp.com/perfilAutonomo.php' + data.perfil.foto);
       $("#perfil").attr('src', 'https://adatcc.000webhostapp.com/perfilAutonomo.php' + data.perfil.foto);
@@ -105,13 +106,14 @@ function desabilita() {
   $('#loginAut').prop('readonly', true);
   $('#senhaAut').prop('readonly', true);
   $('#nomeAut').prop('readonly', true);
-  $('#sobrenomeAut').prop('readonly', true);
   $('#CPFAut').prop('readonly', true);
   $('#telefoneAut').prop('readonly', true);
   $('#emailAut').prop('readonly', true);
   $('#enderecoAut').prop('readonly', true);
   $("#numeroAut").prop('readonly', true);
   $("#bairroAut").prop('readonly', true);
+  $("#cidadeAut").prop('readonly', true);
+  $("#estadoAut").prop('readonly', true);
   $('#btnEditar').prop('readonly', true);
   $('#btnSalvar').prop('readonly', true);
   $('#btnExcluir').prop('readonly', true);
@@ -121,13 +123,14 @@ function habilita() {
   $('#loginAut').prop('readonly', false);
   $('#senhaAut').prop('readonly', false);
   $('#nomeAut').prop('readonly', false);
-  $('#sobrenomeAut').prop('readonly', false);
   $('#CPFAut').prop('readonly', false);
   $('#telefoneAut').prop('readonly', false);
   $('#emailAut').prop('readonly', false);
   $('#enderecoAut').prop('readonly', false);
   $("#numeroAut").prop('readonly', false);
   $("#bairroAut").prop('readonly', false);  
+  $("#cidadeAut").prop('readonly', true);
+  $("#estadoAut").prop('readonly', true);
   $('#btnSalvar').prop('readonly', false);
 }
 /* ===================================================== */
@@ -139,13 +142,14 @@ $(document).on('click', '#btnSalvar', function () {
     "login": $("#loginAut").val(),
     "senha": $("#senhaAut").val(),
     "nome": $("#nomeAut").val(),
-    "sobrenome": $("#sobrenomeAut").val(),
     "cpf": $("#CPFAut").val(),
     "telefone": $("#telefoneAut").val(),
     "email": $("#emailAut").val(),
     "rua": $("#enderecoAut").val(),
     "numero": $("#numeroAut").val(),
-    "bairro": $("#bairroAut").val()
+    "bairro": $("#bairroAut").val(),
+    "cidade": $("#cidadeAut").val(),
+    "estado": $("#estadoAut").val()
   };
   $.ajax({
     type: "post", //como enviar
@@ -206,6 +210,7 @@ function desabilita() {
   $('#tempoRamo').prop('readonly', true);
   $('#btnEditar').prop('readonly', true);
   $('#btnSalvar').prop('readonly', true);
+  $('#btnVoltar').prop('readonly', true);
   $('#btnExcluir').prop('readonly', true);
 }
 
@@ -218,7 +223,10 @@ function habilita() {
   $('#indicaServico').prop('readonly', false);
   $('#tempoServico').prop('readonly', false);
   $('#tempoRamo').prop('readonly', false);
+  $('#btnEditar').prop('readonly', false);
   $('#btnSalvar').prop('readonly', false);
+  $('#btnVoltar').prop('readonly', false);
+  $('#btnExcluir').prop('readonly', false);
 }
 /* ===================================================== */
 
@@ -297,18 +305,18 @@ function preencherPerfilUsu() {
       $("#loginUsu").val(data.perfil.login);
       $("#senhaUsu").val(data.perfil.senha);
       $("#nomeUsu").val(data.perfil.nome);
-      $("#sobrenomeUsu").val(data.perfil.sobrenome);
       $("#CPFUsu").val(data.perfil.cpf);
       $("#telefoneUsu").val(data.perfil.telefone);
       $("#emailUsu").val(data.perfil.email);
       $("#enderecoUsu").val(data.perfil.endereco);
-      $("#referenciaUsu").val(data.perfil.referencia)
+      $("#referenciaUsu").val(data.perfil.referencia);
       $("#numeroUsu").val(data.perfil.numero);
       $("#bairroUsu").val(data.perfil.bairro);
+      $("#cidadeUsu").val(data.perfil.cidade);
+      $("#estadoUsu").val(data.perfil.estado);
       $("#fotoUsu").attr('src', 'https://adatcc.000webhostapp.com/perfilUsuario.php' + data.perfil.foto);
       $("#img").attr('src', 'https://adatcc.000webhostapp.com/perfilUsuario.php' + data.perfil.foto);
       $("#perfil").attr('src', 'https://adatcc.000webhostapp.com/perfilUsuario.php' + data.perfil.foto);
-
     },
     //se der errado
     error: function (data) {
@@ -321,16 +329,17 @@ function desabilita() {
   $('#loginUsu').prop('readonly', true);
   $('#senhaUsu').prop('readonly', true);
   $('#nomeUsu').prop('readonly', true);
-  $('#sobrenomeUsu').prop('readonly', true);
   $('#CPFUsu').prop('readonly', true);
   $('#telefoneUsu').prop('readonly', true);
   $('#emailUsu').prop('readonly', true);
   $('#enderecoUsu').prop('readonly', true);
-  $('#enderecoUsu').prop('readonly', true);
   $("#numeroUsu").prop('readonly', true);
   $("#bairroUsu").prop('readonly', true);
+  $("#cidadeUsu").prop('readonly', true);
+  $("#estadoUsu").prop('readonly', true);
   $('#btnEditar').prop('readonly', true);
   $('#btnSalvar').prop('readonly', true);
+  $('#btnVoltar').prop('readonly', true);
   $('#btnExcluir').prop('readonly', true);
 }
 
@@ -338,7 +347,6 @@ function habilita() {
   $('#loginUsu').prop('readonly', false);
   $('#senhaUsu').prop('readonly', false);
   $('#nomeUsu').prop('readonly', false);
-  $('#sobrenomeUsu').prop('readonly', false);
   $('#CPFUsu').prop('readonly', false);
   $('#telefoneUsu').prop('readonly', false);
   $('#emailUsu').prop('readonly', false);
@@ -346,7 +354,12 @@ function habilita() {
   $('#referenciaUsu').prop('readonly', false);
   $("#numeroUsu").prop('readonly', false);
   $("#bairroUsu").prop('readonly', false);  
+  $("#cidadeUsu").prop('readonly', false);
+  $("#estadoUsu").prop('readonly', false);
+  $('#btnEditar').prop('readonly', false);
   $('#btnSalvar').prop('readonly', false);
+  $('#btnVoltar').prop('readonly', false);
+  $('#btnExcluir').prop('readonly', false);
 }
 /* ===================================================== */
 
@@ -357,14 +370,15 @@ $(document).on('click', '#btnSalvar', function () {
     "login": $("#loginUsu").val(),
     "senha": $("#senhaUsu").val(),
     "nome": $("#nomeUsu").val(),
-    "sobrenome": $("#sobrenomeUsu").val(),
     "cpf": $("#CPFUsu").val(),
     "telefone": $("#telefoneUsu").val(),
     "email": $("#emailUsu").val(),
     "rua": $("#enderecoUsu").val(),
     "ponto de referencia": $("#referenciaUsu").val(),
     "numero": $("#numeroUsu").val(),
-    "bairro": $("#bairroUsu").val()
+    "bairro": $("#bairroUsu").val(),
+    "cidade": $("#cidadeUsu").val(),
+    "estado": $("#estadoUsu").val()
   };
   $.ajax({
     type: "post", //como enviar
@@ -380,13 +394,14 @@ $(document).on('click', '#btnSalvar', function () {
     }
   });
 });
+
 $(document).on('click', '#btnEditar', function () {
   habilita();
-})
+});
 
 $(document).on('click', '#btnVoltar', function () {
   desabilita();
-})
+});
 /* ===================================================== */
 
 

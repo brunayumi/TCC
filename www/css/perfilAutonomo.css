@@ -114,9 +114,10 @@ h1{
 /* ======================== BOTÕES ==================== */
 
 .btnEscuro {
+  margin-left: 7px;
   width:150px;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 4%;
   box-shadow: 0 4px rgba(0,0,0,0.2);
 	background-color:#28386b;
 	border-radius:14px;
@@ -141,6 +142,7 @@ a.btnEscuro:link{
 }
 
 .btnClaro {
+  margin-left: 7px;
   width: 148px;
   text-align: center;
   margin-top: 2%;
