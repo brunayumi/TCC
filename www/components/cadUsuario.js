@@ -112,7 +112,6 @@ $(document).on("click","#btnFinalizar",function(){
       "login":$("#loginUsu").val(),
       "senha":$("#senhaUsu").val(),
       "nome":$("#nomeUsu").val(),
-      "sobrenome":$("#sobrenomeUsu").val(),
        "CPF":$("#CPFUsu").val(),
        "telefone":$("#telefoneUsu").val(),
        "email":$("#emailUsu").val(),
@@ -121,7 +120,6 @@ $(document).on("click","#btnFinalizar",function(){
        "bairro":$("#bairroUsu").val(),
        "cidade":$("#cidadeUsu").val(),
        "estado":$("#estadoUsu").val(),
-       "foto":$("#fotoUsu").val()
     };
 
     $.ajax({
@@ -134,14 +132,14 @@ $(document).on("click","#btnFinalizar",function(){
       $("#loginUsu").val(""),
       $("#senhaUsu").val(""),
       $("#nomeAut").val("");
-      $("#sobrenomeUsu").val("");
       $("#CPFUsu").val("");
       $("#telefoneUsu").val("");
       $("#emailUsu").val("");
       $("#enderecoUsu").val("");
       $("numeroUsu").val("");
       $("bairroUsu").val("");
-      $("#fotoUsu").val("");
+      $("cidadeUsu").val("");
+      $("estadoUsu").val("");
   },
     //se der errado
    error: function(data){
