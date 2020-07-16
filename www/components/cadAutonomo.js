@@ -52,23 +52,23 @@ function verificaCPF(cpf) {
 /* ========================================================================= */
 
 /* =========================== LOGIN AUTÔNOMO ============================== */
-$(document).on('click', '#btnEntrar', function () {
+$(document).on('click', '#btnEntrar', function(){
   var parametros = {
     "login": $("#loginAut").val(),
-    "senha": $("#senhaAut").val(),
+    "senha": $("#senhaAut").val()
   };
 
   $.ajax({
     type: "POST", //como enviar
-    url: "https://adatcc.000webhostapp.com/loginAutonomo.php", //para onde enviar
+    url: "https://adatcc.000webhostapp.com/login_autonomo.php", //para onde enviar
     data: parametros, //o que enviar
     dataType: 'json',
     //se der certo
     success: function (data) {
 
       let acesso = data.autonomo.nivel;
-      var idAutonomo = data.autonomo.codigo;
-      localStorage.setItem('cdAutonomo', idAutonomo);
+      var id_autonomo = data.autonomo.codigo;
+      localStorage.setItem('cd_autonomo', id_autonomo);
 
       if (acesso == 1) {
         location.href = "index.html";
@@ -107,24 +107,24 @@ $(document).on('click', '#btnEntrar', function () {
 /* ============================================================================== */
 
 /* =========================== CADASTRAR AUTÔNOMO =============================== */
-$(document).on("click","#btnFinalizar",function(){
-    var parametros={
-      "login":$("$loginAut").val(""),
-      "senha":$("$senhaAut").val(""),
-      "nome":$("$nomeAut").val(""),
-      "CPF":$("$CPFAut").val(""),
-      "telefone":$("$telefoneAut").val(""),
-      "email":$("$emailAut").val(""),
-      "endereco":$("$enderecoAut").val(""),
-      "numero":$("$numeroAut").val(""),
-      "bairro":$("$bairroAut").val(""),
-      "cidade":$("$cidadeAut").val(""),
-      "estado":$("$estadoAut").val("")
+$(document).on('click', '#btnFinalizar', function(){
+    var parametros = {
+      "login": $("#loginAut").val(),
+      "senha": $("#senhaAut").val(),
+      "nome": $("#nomeAut").val(),
+      "CPF": $("#CPFAut").val(),
+      "telefone": $("#telefoneAut").val(),
+      "email": $("#emailAut").val(),
+      "endereco": $("#enderecoAut").val(),
+      "numero": $("#numeroAut").val(),
+      "bairro": $("#bairroAut").val(),
+      "cidade": $("#cidadeAut").val(),
+      "estado": $("#estadoAut").val()
     };
 
     $.ajax({
       type: "post", //como enviar
-      url:"https://adatcc.000webhostapp.com/cadastroAutonomo.php", //para onde enviar
+      url:"https://adatcc.000webhostapp.com/cadastro_autonomo.php", //para onde enviar
       data: parametros, //o que enviar
       //se der certo
       success: function(data){

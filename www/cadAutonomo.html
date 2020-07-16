@@ -69,7 +69,7 @@
       </div>
       <div class="col-xs-6">
         <div class="content mt-5 mx-auto">
-          <input class="input6" name="telefoneAut" id="telefoneAut" type="tel" placeholder="Telefone" required>
+          <input class="input6" name="telefoneAut" id="telefoneAut" type="tel" placeholder="Telefone" maxlength="11" required>
           <span class="border"></span>
         </div>
       </div>
@@ -117,10 +117,10 @@
     <br>
     <div class="row"> 
 	    <div class="col-xs-4">
-        <button class="btnEscuro" onclick="registrar()" id="btnVoltar">Cancelar</button>
+        <button class="btnEscuro" onclick="registrar()" name="btnVoltar" id="btnVoltar">Cancelar</button>
 		  </div>
 		  <div class="col-xs-4">
-        <button type="submit" class="btnClaro" id="btnFinalizar">Finalizar</button>
+        <button type="submit" class="btnClaro" name="btnFinalizar" id="btnFinalizar">Finalizar</button>
 		  </div>
     </div>
   </div>
